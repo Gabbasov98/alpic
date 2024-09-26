@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="color-scheme" content="light only">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <title>Карточка товара</title>
+</head>
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-top__inner">
+                        <div class="lang">
+                            <a href="" class="lang__item _active">RU</a>
+                            <a href="" class="lang__item">EN</a>
+                            <a href="" class="lang__item">DE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-middle">
+                <div class="container">
+                    <div class="header-middle__inner _flex-between">
+                        <a href="" class="header__logo">
+                            <img src="img/logo.svg" alt="">
+                        </a>
+
+                        <div class="m-menu">
+                            <nav class="m-nav _flex">
+                                <div class="nav-catalog">
+                                    <div class="nav-catalog__show _flex">
+                                        <span>Товарные группы</span>
+                                        <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L8.5 9L16 1" stroke="black" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                    <div class="nav-catalog__hidden">
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Подвеска</a>
+                                                </div>
+                                                <button class="nav-catalog__group-btn">
+                                                    <img src="img/arrow-bottom.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="nav-catalog__group-hidden">
+                                                <ul>
+                                                    <li><a href="">Рычаг подвески</a></li>
+                                                    <li><a href="">Шаровая опора</a></li>
+                                                    <li><a href="">Стабилизатор</a></li>
+                                                    <li><a href="">Втулка рычага</a></li>
+                                                    <li><a href="">Подушки и опоры</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Рулевое управление</a>
+                                                </div>
+                                                <button class="nav-catalog__group-btn">
+                                                    <img src="img/arrow-bottom.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="nav-catalog__group-hidden">
+                                                <ul>
+                                                    <li><a href="">Рулевая тяга</a></li>
+                                                    <li><a href="">Рулевой наконечник</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Масляные фильтры</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Воздушные фильтры</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Салонные фильтры</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Топливные фильтры</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="m-nav__link">О бренде</a>
+                                <a href="" class="m-nav__link">Контакты</a>
+                                <a href="" class="m-nav__link">Где купить?</a>
+                            </nav>
+                            <div class="lang">
+                                <a href="" class="lang__item _active">RU</a>
+                                <a href="" class="lang__item">EN</a>
+                                <a href="" class="lang__item">DE</a>
+                            </div>
+                        </div>
+
+                        <div class="header-auto">
+                            <div class="header-auto__show _toggle-auto-search">
+                                <img src="img/car.svg" alt="" class="header-auto__img">
+                                <span class="header-auto__title">Поиск по авто</span>
+                            </div>
+                            <div class="header-auto__hidden">
+                                <div class="header-auto__top _flex">
+                                    <img src="img/car.svg" alt="" class="header-auto__img">
+                                    <span class="header-auto__title">Поиск по авто</span>
+                                    <button class="header-auto__close _toggle-auto-search">
+                                        <img src="img/close2.svg" alt="">
+                                    </button>
+                                </div>
+                                <form class="header-auto__form">
+                                    <div class="header-auto__grid">
+                                        <div class="m-select">
+                                            <select>
+                                                <option selected hidden disabled>Производитель</option>
+                                                <option>Производитель1</option>
+                                                <option>Производитель2</option>
+                                                <option>Производитель3</option>
+                                            </select>
+                                        </div>
+                                        <div class="m-select">
+                                            <select>
+                                                <option selected hidden disabled>Модель</option>
+                                                <option>Модель1</option>
+                                                <option>Модель2</option>
+                                                <option>Модель3</option>
+                                            </select>
+                                        </div>
+                                        <div class="m-select">
+                                            <select>
+                                                <option selected hidden disabled>Модификация</option>
+                                                <option>Модификация1</option>
+                                                <option>Модификация2</option>
+                                                <option>Модификация3</option>
+                                            </select>
+                                        </div>
+                                        <div class="m-select">
+                                            <select>
+                                                <option selected hidden disabled>Товарная группа</option>
+                                                <option>Группа1</option>
+                                                <option>Группа2</option>
+                                                <option>Группа3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button class="header-auto__btn m-btn m-btn-small m-btn-red">
+                                        <span>Поиск</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="burger">
+                            <div class="burger__btn _view1">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="burger__btn _view2">
+                                <img src="img/close.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="header-bottom__inner _flex-center">
+                        <div class="header-search">
+                            <div class="header-search__field">
+                                <input type="text" placeholder="Введите код OEM, Alpic, аналог...">
+                            </div>
+                            <button class="header-search__btn m-btn m-btn-red">
+                                <span>Поиск</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <main class="content">
+
+            <div class="catalog-item">
+                <div class="container">
+                    <div class="catalog-item__grid">
+                        <div class="catalog-item__col">
+                            <a href="img/product.jpg" data-fancybox class="catalog-item__img">
+                                <img src="img/product.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="catalog-item__col2">
+                            <div class="catalog-item__top">
+                                <div class="m-h1 m-h1-tablet">
+                                    Шаровая опора (комплект)
+                                </div>
+                                <div class="catalog-item__subtitle">
+                                    <div class="m-h1 m-h1-tablet red-text">
+                                        S12977L
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="catalog-item__bottom">
+                                <div class="props">
+                                    <div class="props-group">
+                                        <div class="prop-item">
+                                            <div class="prop-item__title">
+                                                Место установки:
+                                            </div>
+                                            <div class="prop-item__desc">
+                                                Передняя левая нижняя
+                                            </div>
+                                        </div>
+                                        <div class="prop-item">
+                                            <div class="prop-item__title">
+                                                На автомобиле:
+                                            </div>
+                                            <div class="prop-item__desc">
+                                                2 шт
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="props-group">
+                                        <div class="prop-item">
+                                            <div class="prop-item__title">
+                                                Длина
+                                            </div>
+                                            <div class="prop-item__desc">
+                                                200 мм
+                                            </div>
+                                        </div>
+                                        <div class="prop-item">
+                                            <div class="prop-item__title">
+                                                Осевая длина
+                                            </div>
+                                            <div class="prop-item__desc">
+                                                250 мм
+                                            </div>
+                                        </div>
+                                        <div class="prop-item">
+                                            <div class="prop-item__title">
+                                                Высота
+                                            </div>
+                                            <div class="prop-item__desc">
+                                                300 мм
+                                            </div>
+                                        </div>
+                                        <div class="prop-item">
+                                            <div class="prop-item__title">
+                                                Ширина
+                                            </div>
+                                            <div class="prop-item__desc">
+                                                100 мм
+                                            </div>
+                                        </div>
+                                        <div class="prop-item">
+                                            <div class="prop-item__title">
+                                                Вес
+                                            </div>
+                                            <div class="prop-item__desc">
+                                                500 г
+                                            </div>
+                                        </div>
+                                        <div class="prop-item">
+                                            <div class="prop-item__title">
+                                                Резьба/Диаметр1
+                                            </div>
+                                            <div class="prop-item__desc">
+                                                М12х1,5 мм
+                                            </div>
+                                        </div>
+                                        <div class="prop-item">
+                                            <div class="prop-item__title">
+                                                Резьба/Диаметр2
+                                            </div>
+                                            <div class="prop-item__desc">
+                                                М12х1,5 мм
+                                            </div>
+                                        </div>
+                                        <div class="prop-item">
+                                            <div class="prop-item__title">
+                                                Материал
+                                            </div>
+                                            <div class="prop-item__desc">
+                                                металл, пластик
+                                            </div>
+                                        </div>
+                                        <div class="prop-item">
+                                            <div class="prop-item__title">
+                                                Дополнительно
+                                            </div>
+                                            <div class="prop-item__desc">
+                                                без комментариев
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="catalog-item__nav _flex">
+                                    <a href="" class="catalog-item__btn m-btn m-btn-red">
+                                        <span>Где купить?</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="same-products">
+                <div class="container">
+                    <div class="same-products__inner">
+                        <div class="same-group">
+                            <div class="same-group__title">
+                                Парный артикул
+                            </div>
+                            <div class="same-slider slider ">
+                                <div class="slider__wrap">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="" class="product-card">
+                                                    <div class="product-card__img">
+                                                        <img src="img/product2.webp" alt="">
+                                                    </div>
+                                                    <div class="product-card__title">
+                                                        S12977L
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button swiper-button-next">
+                                    <svg width="21" height="41" viewBox="0 0 21 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L19.5 18.5L1 39.5" stroke="#CCC9C9" stroke-width="2" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="same-group">
+                            <div class="same-group__title">
+                                Входит в состав
+                            </div>
+                            <div class="same-slider slider _loop">
+                                <div class="slider__wrap">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="" class="product-card">
+                                                    <div class="product-card__img">
+                                                        <img src="img/product2.webp" alt="">
+                                                    </div>
+                                                    <div class="product-card__title">
+                                                        S12977L
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <a href="" class="product-card">
+                                                    <div class="product-card__img">
+                                                        <img src="img/product2.webp" alt="">
+                                                    </div>
+                                                    <div class="product-card__title">
+                                                        S12977L
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="" class="product-card">
+                                                    <div class="product-card__img">
+                                                        <img src="img/product2.webp" alt="">
+                                                    </div>
+                                                    <div class="product-card__title">
+                                                        S12977L
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="" class="product-card">
+                                                    <div class="product-card__img">
+                                                        <img src="img/product2.webp" alt="">
+                                                    </div>
+                                                    <div class="product-card__title">
+                                                        S12977L
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button swiper-button-next">
+                                    <svg width="21" height="41" viewBox="0 0 21 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L19.5 18.5L1 39.5" stroke="#CCC9C9" stroke-width="2" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="same-group">
+                            <div class="same-group__title">
+                                Компоненты
+                            </div>
+                            <div class="same-slider slider _loop">
+                                <div class="slider__wrap">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="" class="product-card">
+                                                    <div class="product-card__img">
+                                                        <img src="img/product2.webp" alt="">
+                                                    </div>
+                                                    <div class="product-card__title">
+                                                        S12977L
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <a href="" class="product-card">
+                                                    <div class="product-card__img">
+                                                        <img src="img/product2.webp" alt="">
+                                                    </div>
+                                                    <div class="product-card__title">
+                                                        S12977L
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="" class="product-card">
+                                                    <div class="product-card__img">
+                                                        <img src="img/product2.webp" alt="">
+                                                    </div>
+                                                    <div class="product-card__title">
+                                                        S12977L
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="" class="product-card">
+                                                    <div class="product-card__img">
+                                                        <img src="img/product2.webp" alt="">
+                                                    </div>
+                                                    <div class="product-card__title">
+                                                        S12977L
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button swiper-button-next">
+                                    <svg width="21" height="41" viewBox="0 0 21 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L19.5 18.5L1 39.5" stroke="#CCC9C9" stroke-width="2" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-detail _tabs-parent">
+                <div class="container">
+                    <div class="m-tabs">
+                        <div class="product-detail__tab _tab _active" data-tab="_tab1">
+                            <span>OEM номера</span>
+                        </div>
+                        <div class="product-detail__tab _tab" data-tab="_tab2">
+                            <span>Применимость</span>
+                        </div>
+                    </div>
+
+                    <div class="m-tab-content _tab1 _active">
+                        <div class="oem-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="oem-table__td medium-text">AUDI</span>
+                                        </td>
+                                        <td>
+                                            <span class="oem-table__td light-text">000 983 0624</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="oem-table__td medium-text">AUDI</span>
+                                        </td>
+                                        <td>
+                                            <span class="oem-table__td light-text">000 983 0624V</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="oem-table__td medium-text">BMW</span>
+                                        </td>
+                                        <td>
+                                            <span class="oem-table__td light-text">06 811 5561</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="oem-table__td medium-text">BMW</span>
+                                        </td>
+                                        <td>
+                                            <span class="oem-table__td light-text">VW068115561B</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="m-tab-content _tab2">
+                        <div class="use-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="use-table__td">Марка</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Модель</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Год выпуска</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Тип кузова</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Двигатель</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Тип КПП</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="use-table__td">Марка</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Модель</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Год выпуска</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Тип кузова</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Двигатель</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Тип КПП</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="use-table__td">Марка</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Модель</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Год выпуска</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Тип кузова</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Двигатель</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Тип КПП</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="use-table__td">Марка</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Модель</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Год выпуска</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Тип кузова</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Двигатель</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Тип КПП</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="use-table__td">Марка</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Модель</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Год выпуска</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Тип кузова</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Двигатель</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Тип КПП</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="use-table__td">Марка</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Модель</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Год выпуска</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Тип кузова</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Двигатель</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Тип КПП</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="use-table__td">Марка</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Модель</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Год выпуска</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Тип кузова</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Двигатель</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Тип КПП</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="use-table__td">Марка</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Модель</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Год выпуска</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Тип кузова</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Двигатель</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Тип КПП</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="use-table__td">Марка</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Модель</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Год выпуска</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Тип кузова</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Двигатель</span>
+                                        </td>
+                                        <td>
+                                            <span class="use-table__td">Тип КПП</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news">
+                <div class="container">
+                    <div class="m-h2 text-center">
+                        Наши новости
+                    </div>
+                    <div class="news-slider slider _loop">
+                        <div class="slider__wrap">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="news-card">
+                                            <div class="news-card__img">
+                                                <img src="img/news.webp" alt="">
+                                            </div>
+                                            <div class="news-card__title text20 medium-text">
+                                                <a href="">
+                                                    Новые поступления деталей трансмиссии
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="news-card">
+                                            <div class="news-card__img">
+                                                <img src="img/news2.webp" alt="">
+                                            </div>
+                                            <div class="news-card__title text20 medium-text">
+                                                <a href="">
+                                                    Открылся магазин нового дилера продукции
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="news-card">
+                                            <div class="news-card__img">
+                                                <img src="img/news3.webp" alt="">
+                                            </div>
+                                            <div class="news-card__title text20 medium-text">
+                                                <a href="">
+                                                    Новые поступления деталей трансмиссии
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="news-card">
+                                            <div class="news-card__img">
+                                                <img src="img/news4.webp" alt="">
+                                            </div>
+                                            <div class="news-card__title text20 medium-text">
+                                                <a href="">
+                                                    Открылся магазин нового дилера продукции
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="news-card">
+                                            <div class="news-card__img">
+                                                <img src="img/news4.webp" alt="">
+                                            </div>
+                                            <div class="news-card__title text20 medium-text">
+                                                <a href="">
+                                                    Открылся магазин нового дилера продукции
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-nav">
+                            <div class="swiper-button swiper-button-prev">
+                                <svg width="27" height="50" viewBox="0 0 27 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.498 1.50537L2.0001 24.8402L24.7171 48.5172" stroke="#929292" stroke-width="1.86" stroke-miterlimit="10" />
+                                </svg>
+                            </div>
+                            <div class="swiper-button swiper-button-next">
+                                <svg width="26" height="50" viewBox="0 0 26 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 48.4946L24.4979 25.1598L1.78097 1.48277" stroke="#929292" stroke-width="1.86" stroke-miterlimit="10" />
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <a href="" class="footer__logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <div class="footer__inner">
+                    <div class="footer__links">
+                        <ul>
+                            <li><a href="">О бренде</a></li>
+                            <li><a href="">Где купить?</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__bottom">
+                        <a href="" class="footer__conf text16 medium-text">
+                            Политика <br>
+                конфиденциальности
+                        </a>
+                        <div class="footer__c medium-text _flex">
+                            <img src="img/c.svg" alt="">
+                            <span class="text16">
+                    2024
+                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="js/jbootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="color-scheme" content="light only">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036"></script>
+    <title>Контакты</title>
+</head>
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-top__inner">
+                        <div class="lang">
+                            <a href="" class="lang__item _active">RU</a>
+                            <a href="" class="lang__item">EN</a>
+                            <a href="" class="lang__item">DE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-middle">
+                <div class="container">
+                    <div class="header-middle__inner _flex-between">
+                        <a href="" class="header__logo">
+                            <img src="img/logo.svg" alt="">
+                        </a>
+
+                        <div class="m-menu">
+                            <nav class="m-nav _flex">
+                                <div class="nav-catalog">
+                                    <div class="nav-catalog__show _flex">
+                                        <span>Товарные группы</span>
+                                        <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L8.5 9L16 1" stroke="black" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                    <div class="nav-catalog__hidden">
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Подвеска</a>
+                                                </div>
+                                                <button class="nav-catalog__group-btn">
+                                                    <img src="img/arrow-bottom.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="nav-catalog__group-hidden">
+                                                <ul>
+                                                    <li><a href="">Рычаг подвески</a></li>
+                                                    <li><a href="">Шаровая опора</a></li>
+                                                    <li><a href="">Стабилизатор</a></li>
+                                                    <li><a href="">Втулка рычага</a></li>
+                                                    <li><a href="">Подушки и опоры</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Рулевое управление</a>
+                                                </div>
+                                                <button class="nav-catalog__group-btn">
+                                                    <img src="img/arrow-bottom.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="nav-catalog__group-hidden">
+                                                <ul>
+                                                    <li><a href="">Рулевая тяга</a></li>
+                                                    <li><a href="">Рулевой наконечник</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Масляные фильтры</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Воздушные фильтры</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Салонные фильтры</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Топливные фильтры</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="m-nav__link">О бренде</a>
+                                <a href="" class="m-nav__link">Контакты</a>
+                                <a href="" class="m-nav__link">Где купить?</a>
+                            </nav>
+                            <div class="lang">
+                                <a href="" class="lang__item _active">RU</a>
+                                <a href="" class="lang__item">EN</a>
+                                <a href="" class="lang__item">DE</a>
+                            </div>
+                        </div>
+
+                        <div class="header-auto">
+                            <div class="header-auto__show _toggle-auto-search">
+                                <img src="img/car.svg" alt="" class="header-auto__img">
+                                <span class="header-auto__title">Поиск по авто</span>
+                            </div>
+                            <div class="header-auto__hidden">
+                                <div class="header-auto__top _flex">
+                                    <img src="img/car.svg" alt="" class="header-auto__img">
+                                    <span class="header-auto__title">Поиск по авто</span>
+                                    <button class="header-auto__close _toggle-auto-search">
+                                        <img src="img/close2.svg" alt="">
+                                    </button>
+                                </div>
+                                <form class="header-auto__form">
+                                    <div class="header-auto__grid">
+                                        <div class="m-select">
+                                            <select>
+                                                <option selected hidden disabled>Производитель</option>
+                                                <option>Производитель1</option>
+                                                <option>Производитель2</option>
+                                                <option>Производитель3</option>
+                                            </select>
+                                        </div>
+                                        <div class="m-select">
+                                            <select>
+                                                <option selected hidden disabled>Модель</option>
+                                                <option>Модель1</option>
+                                                <option>Модель2</option>
+                                                <option>Модель3</option>
+                                            </select>
+                                        </div>
+                                        <div class="m-select">
+                                            <select>
+                                                <option selected hidden disabled>Модификация</option>
+                                                <option>Модификация1</option>
+                                                <option>Модификация2</option>
+                                                <option>Модификация3</option>
+                                            </select>
+                                        </div>
+                                        <div class="m-select">
+                                            <select>
+                                                <option selected hidden disabled>Товарная группа</option>
+                                                <option>Группа1</option>
+                                                <option>Группа2</option>
+                                                <option>Группа3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button class="header-auto__btn m-btn m-btn-small m-btn-red">
+                                        <span>Поиск</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="burger">
+                            <div class="burger__btn _view1">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="burger__btn _view2">
+                                <img src="img/close.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="header-bottom__inner _flex-center">
+                        <div class="header-search">
+                            <div class="header-search__field">
+                                <input type="text" placeholder="Введите код OEM, Alpic, аналог...">
+                            </div>
+                            <button class="header-search__btn m-btn m-btn-red">
+                                <span>Поиск</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <main class="content">
+
+            <div class="contacts">
+                <div class="container">
+                    <div class="contacts__grid">
+                        <div class="contacts__col">
+                            <div class="contacts-info">
+                                <div class="contacts-info__text">
+                                    Эксклюзивный представитель бренда Alpic <br>
+                                    на территории Российской Федерации и стран СНГ
+                                </div>
+                                <img src="img/logo2.svg" alt="" class="contacts-info__logo">
+                                <div class="contacts-info__groups">
+                                    <div class="contacts-info__text">
+                                        Мы работаем <br>
+                                        с понедельника по пятницу: <br>
+                                        9:00 am - 6:00 pm
+                                    </div>
+                                    <div class="contacts-info__text">
+                                        Адрес: <br>
+                                        ул. Кутузова, 12, <br>
+                                        р-н Щербинка, <br>
+                                        г Москва, <br>
+                                        Россия
+                                    </div>
+                                    <div class="contacts-info__text">
+                                        <a href="tel:88001012795">8-800-101-27-95</a> <br>
+                                        <a href="mailto:info@alpicparts.com">info@alpicparts.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__col2">
+                            <form class="contacts-form">
+                                <div class="contacts-form__text">
+                                    <div class="contacts-form__title m-h2">
+                                        Хотите стать партнером?
+                                    </div>
+                                    <div class="contacts-form__desc">
+                                        Отправьте ваше сообщение, укажите контактную информацию и мы обязательно свяжемся с вами
+                                    </div>
+                                </div>
+                                <div class="contacts-form__fields">
+                                    <div class="fg">
+                                        <input type="text" placeholder="Ваше имя">
+                                    </div>
+                                    <div class="fg">
+                                        <input type="text" placeholder="Телефон">
+                                    </div>
+                                    <div class="fg">
+                                        <input type="text" placeholder="E-mail">
+                                    </div>
+                                    <div class="fg">
+                                        <input type="text" placeholder="Ваше сообщение">
+                                    </div>
+                                </div>
+                                <button class="contacts-form__btn m-btn m-btn-red">
+                                    <span>Отправить</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news">
+                <div class="container">
+                    <div class="m-h2 text-center">
+                        Наши новости
+                    </div>
+                    <div class="news-slider slider _loop">
+                        <div class="slider__wrap">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="news-card">
+                                            <div class="news-card__img">
+                                                <img src="img/news.webp" alt="">
+                                            </div>
+                                            <div class="news-card__title text20 medium-text">
+                                                <a href="">
+                                                    Новые поступления деталей трансмиссии
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="news-card">
+                                            <div class="news-card__img">
+                                                <img src="img/news2.webp" alt="">
+                                            </div>
+                                            <div class="news-card__title text20 medium-text">
+                                                <a href="">
+                                                    Открылся магазин нового дилера продукции
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="news-card">
+                                            <div class="news-card__img">
+                                                <img src="img/news3.webp" alt="">
+                                            </div>
+                                            <div class="news-card__title text20 medium-text">
+                                                <a href="">
+                                                    Новые поступления деталей трансмиссии
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="news-card">
+                                            <div class="news-card__img">
+                                                <img src="img/news4.webp" alt="">
+                                            </div>
+                                            <div class="news-card__title text20 medium-text">
+                                                <a href="">
+                                                    Открылся магазин нового дилера продукции
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="news-card">
+                                            <div class="news-card__img">
+                                                <img src="img/news4.webp" alt="">
+                                            </div>
+                                            <div class="news-card__title text20 medium-text">
+                                                <a href="">
+                                                    Открылся магазин нового дилера продукции
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-nav">
+                            <div class="swiper-button swiper-button-prev">
+                                <svg width="27" height="50" viewBox="0 0 27 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.498 1.50537L2.0001 24.8402L24.7171 48.5172" stroke="#929292" stroke-width="1.86" stroke-miterlimit="10" />
+                                </svg>
+                            </div>
+                            <div class="swiper-button swiper-button-next">
+                                <svg width="26" height="50" viewBox="0 0 26 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 48.4946L24.4979 25.1598L1.78097 1.48277" stroke="#929292" stroke-width="1.86" stroke-miterlimit="10" />
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <a href="" class="footer__logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <div class="footer__inner">
+                    <div class="footer__links">
+                        <ul>
+                            <li><a href="">О бренде</a></li>
+                            <li><a href="">Где купить?</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__bottom">
+                        <a href="" class="footer__conf text16 medium-text">
+                            Политика <br>
+                конфиденциальности
+                        </a>
+                        <div class="footer__c medium-text _flex">
+                            <img src="img/c.svg" alt="">
+                            <span class="text16">
+                    2024
+                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="js/jbootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
