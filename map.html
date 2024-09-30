@@ -203,6 +203,32 @@
                             <button class="header-search__btn m-btn m-btn-red">
                                 <span>Поиск</span>
                             </button>
+                            <div class="header-search__variants">
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101</span> Alpic </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101123</span> NewBrand </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101123</span> NewBrand123 </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101123</span> NewBrand </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101-123456</span> New </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101123</span> NewBrand NewBrand </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101</span> New NewBrand </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101123-123654</span> NewBrand NewBrand </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -213,7 +239,75 @@
 
             <div class="place">
                 <div class="container">
-                    <div class="map" data-cord1="59.892730" data-cord2="30.335074" data-zoom="16"></div>
+                    <div class="map" id="map">
+
+                    </div>
+                    <script>
+                        ymaps.ready(init);
+                        let coord = [55.452232, 38.438058]
+                        let mapPoints = [{
+                            marker: "img/marker.svg",
+                            city: "Москва",
+                            name: "АвтоФЕС",
+                            linkHref: "link.com",
+                            cords: [55.452232, 38.438058],
+                        }, ]
+
+
+
+                        function init() {
+                            let myMap = new ymaps.Map("map", {
+                                center: coord,
+                                zoom: 16,
+                                controls: [],
+                            });
+
+                            let placeMarks = [
+
+                            ]
+
+                            // myMap.behaviors.disable('scrollZoom');
+
+                            mapPoints.forEach((el, index) => {
+                                let placeMark = new ymaps.Placemark(el.cords, {
+                                    balloonContentHeader: ``,
+                                    balloonContentBody: `
+                <div class="place-card">
+                    <div class="office-card__items">
+                        <div class="place-card__title">
+                            ${el.city}
+                        </div>
+                        <div class="place-card__desc">
+                            ${el.name}
+                        </div>
+                        <div class="place-card__nav _flex">
+                            <a href="${el.linkHref}">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                `,
+                                    balloonContentFooter: '',
+                                    hintContent: '',
+                                }, {
+                                    iconLayout: 'default#image',
+                                    iconImageHref: el.marker,
+                                    iconImageSize: [48, 53],
+                                    iconImageOffset: [-24, -26.5],
+                                    hideIconOnBalloonOpen: false,
+                                });
+                                myMap.geoObjects.add(placeMark);
+                                placeMarks.push(placeMark)
+
+                            })
+
+
+
+
+
+                        }
+                    </script>
+
+                    <!--                    <div class="map" data-cord1="55.452232" data-cord2="38.438058" data-zoom="16"></div>-->
                 </div>
             </div>
 
@@ -348,6 +442,7 @@
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/fancybox.umd.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/main.min.js"></script>
 
 </body>
