@@ -21,6 +21,7 @@
     .wrapper a {
         font-size: 30px;
         text-transform: capitalize;
+        word-break: break-word;
     }
 
     .wrapper button {
@@ -33,6 +34,14 @@
 <body class="m-page">
 
     <div class="wrapper" style="padding: 50px;">
+        <a href="404.html" style="display: block; margin-bottom: 20px;">
+            404
+        </a>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#thankModal">
+            Ваше сообщение
+            отправлено!
+        </button>
+
         <a href="index.html" style="display: block; margin-bottom: 20px;">
             Главная
         </a>
@@ -74,9 +83,7 @@
         </a>
 
 
-        <!--        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#quickOrder">-->
-        <!--            Быстрый заказ-->
-        <!--        </button>-->
+
 
     </div>
 
@@ -86,22 +93,29 @@
 
 
 
-    <div class="modal" id="Modal">
-        <div class="modal__bg modal-bg _close-modal"></div>
-        <div class="modal__dialog">
-            <div class="modal__top">
-                <div class="text32 medium-text">
-                    Title
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade thank-modal" id="thankModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <div class="thank-modal__inner">
+                    <img class="thank-modal__icon" src="img/success.svg" alt="">
+                    <div class="thank-modal__title m-h2">
+                        Ваше сообщение <br>
+                    отправлено!
+                    </div>
                 </div>
-                <button class="close-btn _close-modal">
-                    <img src="img/close.svg" alt="">
-                </button>
             </div>
         </div>
     </div>
 
+    <!--<div class="modal-backdrop fade show"></div>-->
     <!--  -->
-    <script src="js/jbootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
