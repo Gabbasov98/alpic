@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/fancybox.css">
-    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/select2.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <title>Главная</title>
@@ -129,54 +129,6 @@
                                 <img src="img/car.svg" alt="" class="header-auto__img">
                                 <span class="header-auto__title">Поиск по авто</span>
                             </div>
-                            <div class="header-auto__hidden">
-                                <div class="header-auto__top _flex">
-                                    <img src="img/car.svg" alt="" class="header-auto__img">
-                                    <span class="header-auto__title">Поиск по авто</span>
-                                    <button class="header-auto__close _toggle-auto-search">
-                                        <img src="img/close2.svg" alt="">
-                                    </button>
-                                </div>
-                                <form class="header-auto__form">
-                                    <div class="header-auto__grid">
-                                        <div class="m-select">
-                                            <select>
-                                                <option selected hidden disabled>Производитель</option>
-                                                <option>Производитель1</option>
-                                                <option>Производитель2</option>
-                                                <option>Производитель3</option>
-                                            </select>
-                                        </div>
-                                        <div class="m-select">
-                                            <select>
-                                                <option selected hidden disabled>Модель</option>
-                                                <option>Модель1</option>
-                                                <option>Модель2</option>
-                                                <option>Модель3</option>
-                                            </select>
-                                        </div>
-                                        <div class="m-select">
-                                            <select>
-                                                <option selected hidden disabled>Модификация</option>
-                                                <option>Модификация1</option>
-                                                <option>Модификация2</option>
-                                                <option>Модификация3</option>
-                                            </select>
-                                        </div>
-                                        <div class="m-select">
-                                            <select>
-                                                <option selected hidden disabled>Товарная группа</option>
-                                                <option>Группа1</option>
-                                                <option>Группа2</option>
-                                                <option>Группа3</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <button class="header-auto__btn m-btn m-btn-small m-btn-red">
-                                        <span>Поиск</span>
-                                    </button>
-                                </form>
-                            </div>
                         </div>
 
                         <div class="burger">
@@ -234,6 +186,89 @@
                 </div>
             </div>
 
+            <div class="car-search">
+                <div class="car-search__top _flex">
+                    <img src="img/car.svg" alt="" class="car-search__img">
+                    <div class="car-search__title text20 semi-bold-text">
+                        Поиск по авто
+                    </div>
+                    <button class="car-search__close _toggle-auto-search">
+                        <img src="img/close3.svg" alt="">
+                    </button>
+                </div>
+                <div class="car-search__grid">
+                    <div class="select-block">
+                        <select class="js-select2" name="brand" placeholder="Марка">
+                            <option value=""></option>
+                            <option value="367">Абаза</option>
+                            <option value="368">ACURA</option>
+                            <option value="369">ALFA ROMEO</option>
+                            <option value="370">AUDI</option>
+                            <option value="371">BENTLEY</option>
+                            <option value="372">BMW</option>
+                            <option value="373">BUICK</option>
+                            <option value="374">CADILLAC</option>
+                            <option value="375">CHERY (18)</option>
+                            <option value="376">FIAT</option>
+                            <option value="377">METRO-CAMMELL-WEYMANN</option>
+                            <option value="378">VOLVO CONSTRUCTION EQUIPMENT</option>
+                            <option value="370">FORD</option>
+                            <option value="380">GAZ</option>
+                            <option value="381">GMC</option>
+                            <option value="382">GREAT WALL</option>
+                            <option value="383">BENTLEY</option>
+                            <option value="384">BMW</option>
+                            <option value="385">BUICK</option>
+                            <option value="386">CADILLAC</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <select class="js-select2" name="model" placeholder="Модель">
+                            <option value=""></option>
+                            <option value="1">100 C1 Saloon (801, 803, 805, 807, 811, 813, F104) | 68-</option>
+                            <option value="2">TOURNEO CONNECT / GRAND TOURNEO CONNECT V408 MPV | 13-</option>
+                            <option value="3">BERLINGO / BERLINGO FIRST MPV (MF_, GJK_, GFK_) | 96-</option>
+                            <option value="4">TRANSPORTER T4 Bus (70B, 70C, 7DB, 7DK, 70J, 70K, 7DC, 7DJ) | 90-</option>
+                            <option value="5">121 II (DB) | 90-</option>
+                            <option value="6">121 III Hatchback Van (JASM, JBSM) | 96-</option>
+                            <option value="7">TRANSPORTER T4 Bus (70B, 70C, 7DB, 7DK, 70J, 70K, 7DC, 7DJ) | 90-</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <select class="js-select2" name="modification" placeholder="Модификация">
+                            <option value=""></option>
+                            <option value="1">1.4 i (MFKFX, MFKFW, GJKFWB, GJKFWC, GFKFWC) | 55kW/75Ps | KFX (TU3JP),KFW (TU3JP) | 96-11</option>
+                            <option value="2">1.2 PureTech 110 (2RHNZB, 2RHNZW, 2RHNPX, 2RHNPJ) | 81kW/110Ps | HNZ (EB2DT),HNV (EB2DTM),HNP (EB2ADT) | 17-</option>
+                            <option value="3">2.0 HDi 110 | 80kW/109Ps | RHZ (DW10ATED),RHZ (DW10CTED),RHZ (DW10BTED),RHZ (DW10CTED+),RHZ (DW10BTED+) | 03-06</option>
+                            <option value="4">1.6 16V (LS09, LS0L, LS0M, LS0P, LS0V, LS18, LS1S, LS1V,... | 77kW/105Ps | K4M 690,K4M 696,K4M 694,K4M 697,K4M 698 | 06-</option>
+                            <option value="5">1.3 D Multijet (225AXE1A, 225CXE1A, 225AXH1A, 225AXL1A,... | 70kW/95Ps | 199 B1.000,330 A1.000,552 83 775 | 10-</option>
+                            <option value="6">35C17, 35S17, 40C17, 45C17, 50C17, 60C17, 65C17, 70C17 | 125kW/170Ps | F1CE3481C,F1CE3481C,F1CE3481C,F1CE3481C,F1CE3481C | 11-14</option>
+                            <option value="7">NaturalPower 35S14, 35C14, 40C14, 50C14, 60C14, 65C14,... | 100kW/136Ps | F1CFA401A,F1CFA401B,F1CFA401C | 14-</option>
+                            <option value="8">1.5 dCi 75 / Blue dCi 75 (B8JW, B8M4, B8AH, B8M7, B8M6) | 55kW/75Ps | K9K 612,K9K 626,K9K 838,K9K 872 | 12-</option>
+                            <option value="9">35C17, 35S17, 40C17, 45C17, 50C17, 60C17, 65C17, 70C17 | 125kW/170Ps | F1CE3481C,F1CE3481C,F1CE3481C,F1CE3481C,F1CE3481C | 11-14</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <select class="js-select2" name="productGroup" placeholder="Товарная группа">
+                            <option value=""></option>
+                            <option value="1">Масляные фильтры</option>
+                            <option value="2">Воздушные фильтры</option>
+                            <option value="3">Салонные фильтры</option>
+                            <option value="4">Топливные фильтры</option>
+                            <option value="5">Рычаг подвески</option>
+                            <option value="6">Шаровая опора</option>
+                            <option value="7">Стабилизатор</option>
+                            <option value="8">Втулка рычага</option>
+                            <option value="9">Подушки и опоры</option>
+                            <option value="10">Рулевая тяга</option>
+                            <option value="11">Рулевой наконечник</option>
+                        </select>
+                    </div>
+                    <button class="car-search__btn m-btn m-btn-red">
+                        <span>Поиск</span>
+                    </button>
+                </div>
+            </div>
         </header>
         <main class="content">
 
@@ -485,7 +520,7 @@
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/fancybox.umd.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/select2.min.js"></script>
     <script src="js/main.min.js"></script>
 
 </body>
