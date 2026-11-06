@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="color-scheme" content="light only">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <title>Главная</title>
+</head>
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-top__inner">
+                        <div class="lang">
+                            <a href="" class="lang__item _active">RU</a>
+                            <a href="" class="lang__item">EN</a>
+                            <a href="" class="lang__item">DE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-middle">
+                <div class="container">
+                    <div class="header-middle__inner _flex-between">
+                        <a href="" class="header__logo">
+                            <img src="img/logo.svg" alt="">
+                        </a>
+
+                        <div class="m-menu">
+                            <nav class="m-nav _flex">
+                                <div class="nav-catalog">
+                                    <div class="nav-catalog__show _flex">
+                                        <span>Каталог</span>
+                                        <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L8.5 9L16 1" stroke="black" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                    <div class="nav-catalog__hidden">
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Подвеска</a>
+                                                </div>
+                                                <button class="nav-catalog__group-btn">
+                                                    <img src="img/arrow-bottom.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="nav-catalog__group-hidden">
+                                                <ul>
+                                                    <li><a href="">Рычаг подвески</a></li>
+                                                    <li><a href="">Шаровая опора</a></li>
+                                                    <li><a href="">Стабилизатор</a></li>
+                                                    <li><a href="">Втулка рычага</a></li>
+                                                    <li><a href="">Подушки и опоры</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Рулевое управление</a>
+                                                </div>
+                                                <button class="nav-catalog__group-btn">
+                                                    <img src="img/arrow-bottom.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="nav-catalog__group-hidden">
+                                                <ul>
+                                                    <li><a href="">Рулевая тяга</a></li>
+                                                    <li><a href="">Рулевой наконечник</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Масляные фильтры</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Воздушные фильтры</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Салонные фильтры</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Топливные фильтры</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="m-nav__link">О бренде</a>
+                                <a href="" class="m-nav__link">Контакты</a>
+                                <a href="" class="m-nav__link">Где купить?</a>
+                            </nav>
+                            <div class="lang">
+                                <a href="" class="lang__item _active">RU</a>
+                                <a href="" class="lang__item">EN</a>
+                                <a href="" class="lang__item">DE</a>
+                            </div>
+                        </div>
+
+                        <div class="header-auto">
+                            <div class="header-auto__show _toggle-auto-search">
+                                <img src="img/car.svg" alt="" class="header-auto__img">
+                                <span class="header-auto__title">Поиск по авто</span>
+                            </div>
+                            <a href="" class="header-brush m-btn m-btn-red">
+                                <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.785 13.997C12.715 13.2694 12.3978 12.5696 11.8395 12.0825C11.5406 11.8216 11.1838 11.6904 10.8735 11.4574L6.0753 3.11036C5.52307 2.39554 4.49392 2.34578 3.9105 3.05004C3.35979 3.71509 3.64351 4.2414 3.88159 4.94264C4.84457 7.78079 6.12094 10.5443 7.01623 13.399L6.90365 13.9977L2.20056 14C1.03144 13.862 0.143763 12.9836 0.00380324 11.8269L0 2.28696C0.0889959 1.04357 1.01395 0.134217 2.25533 0H18.6899C19.9366 0.0852049 20.8768 1.00512 21 2.22965V11.7726C20.9095 12.9127 19.9891 13.8439 18.8519 13.9932L12.785 13.997Z" fill="white" />
+                                    <path d="M5.32313 3.63579L10.2662 12.4739C11.8777 12.8726 12.4427 14.8247 11.1494 15.9587C9.4503 17.4476 7.04637 15.6044 8.03227 13.5427L4.55934 4.09123C4.44678 3.59975 4.95672 3.34673 5.32238 3.63579H5.32313Z" fill="white" />
+                                </svg>
+                                <span>Каталог щеток</span>
+                            </a>
+                        </div>
+
+                        <div class="burger">
+                            <div class="burger__btn _view1">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="burger__btn _view2">
+                                <img src="img/close.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="header-bottom__inner _flex-center">
+                        <div class="header-search">
+                            <div class="header-search__field">
+                                <input type="text" placeholder="Введите код OEM, Alpic, аналог..." data-placeholder="Введите код OEM, Alpic, аналог..." data-placeholder-mob="OEM, Alpic, аналог...">
+                            </div>
+                            <button class="header-search__btn m-btn m-btn-red">
+                                <span>Поиск</span>
+                            </button>
+                            <div class="header-search__variants">
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101</span> Alpic </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101123</span> NewBrand </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101123</span> NewBrand123 </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101123</span> NewBrand </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101-123456</span> New </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101123</span> NewBrand NewBrand </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101</span> New NewBrand </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101123-123654</span> NewBrand NewBrand </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-search">
+                <div class="car-search__top _flex">
+                    <img src="img/car.svg" alt="" class="car-search__img">
+                    <div class="car-search__title text20 semi-bold-text">
+                        Поиск по авто
+                    </div>
+                    <button class="car-search__close _toggle-auto-search">
+                        <img src="img/close3.svg" alt="">
+                    </button>
+                </div>
+                <div class="car-search__grid">
+                    <div class="select-block">
+                        <select class="js-select2" name="brand" data-css-class="_select1" placeholder="Марка">
+                            <option value=""></option>
+                            <option value="367">Абаза</option>
+                            <option value="368">ACURA</option>
+                            <option value="369">ALFA ROMEO</option>
+                            <option value="370">AUDI</option>
+                            <option value="371">BENTLEY</option>
+                            <option value="372">BMW</option>
+                            <option value="373">BUICK</option>
+                            <option value="374">CADILLAC</option>
+                            <option value="375">CHERY (18)</option>
+                            <option value="376">FIAT</option>
+                            <option value="377">METRO-CAMMELL-WEYMANN</option>
+                            <option value="378">VOLVO CONSTRUCTION EQUIPMENT</option>
+                            <option value="370">FORD</option>
+                            <option value="380">GAZ</option>
+                            <option value="381">GMC</option>
+                            <option value="382">GREAT WALL</option>
+                            <option value="383">BENTLEY</option>
+                            <option value="384">BMW</option>
+                            <option value="385">BUICK</option>
+                            <option value="386">CADILLAC</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <select class="js-select2" name="model" data-css-class="_select2" placeholder="Модель">
+                            <option value=""></option>
+                            <option value="1">100 C1 Saloon (801, 803, 805, 807, 811, 813, F104) | 68-</option>
+                            <option value="2">TOURNEO CONNECT / GRAND TOURNEO CONNECT V408 MPV | 13-</option>
+                            <option value="3">BERLINGO / BERLINGO FIRST MPV (MF_, GJK_, GFK_) | 96-</option>
+                            <option value="4">TRANSPORTER T4 Bus (70B, 70C, 7DB, 7DK, 70J, 70K, 7DC, 7DJ) | 90-</option>
+                            <option value="5">121 II (DB) | 90-</option>
+                            <option value="6">121 III Hatchback Van (JASM, JBSM) | 96-</option>
+                            <option value="7">TRANSPORTER T4 Bus (70B, 70C, 7DB, 7DK, 70J, 70K, 7DC, 7DJ) | 90-</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <select class="js-select2" name="modification" data-css-class="_select3" placeholder="Модификация">
+                            <option value=""></option>
+                            <option value="1">1.4 i (MFKFX, MFKFW, GJKFWB, GJKFWC, GFKFWC) | 55kW/75Ps | KFX (TU3JP),KFW (TU3JP) | 96-11</option>
+                            <option value="2">1.2 PureTech 110 (2RHNZB, 2RHNZW, 2RHNPX, 2RHNPJ) | 81kW/110Ps | HNZ (EB2DT),HNV (EB2DTM),HNP (EB2ADT) | 17-</option>
+                            <option value="3">2.0 HDi 110 | 80kW/109Ps | RHZ (DW10ATED),RHZ (DW10CTED),RHZ (DW10BTED),RHZ (DW10CTED+),RHZ (DW10BTED+) | 03-06</option>
+                            <option value="4">1.6 16V (LS09, LS0L, LS0M, LS0P, LS0V, LS18, LS1S, LS1V,... | 77kW/105Ps | K4M 690,K4M 696,K4M 694,K4M 697,K4M 698 | 06-</option>
+                            <option value="5">1.3 D Multijet (225AXE1A, 225CXE1A, 225AXH1A, 225AXL1A,... | 70kW/95Ps | 199 B1.000,330 A1.000,552 83 775 | 10-</option>
+                            <option value="6">35C17, 35S17, 40C17, 45C17, 50C17, 60C17, 65C17, 70C17 | 125kW/170Ps | F1CE3481C,F1CE3481C,F1CE3481C,F1CE3481C,F1CE3481C | 11-14</option>
+                            <option value="7">NaturalPower 35S14, 35C14, 40C14, 50C14, 60C14, 65C14,... | 100kW/136Ps | F1CFA401A,F1CFA401B,F1CFA401C | 14-</option>
+                            <option value="8">1.5 dCi 75 / Blue dCi 75 (B8JW, B8M4, B8AH, B8M7, B8M6) | 55kW/75Ps | K9K 612,K9K 626,K9K 838,K9K 872 | 12-</option>
+                            <option value="9">35C17, 35S17, 40C17, 45C17, 50C17, 60C17, 65C17, 70C17 | 125kW/170Ps | F1CE3481C,F1CE3481C,F1CE3481C,F1CE3481C,F1CE3481C | 11-14</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <select class="js-select2" name="productGroup" data-css-class="_select4" placeholder="Товарная группа">
+                            <option value=""></option>
+                            <option value="1">Масляные фильтры</option>
+                            <option value="2">Воздушные фильтры</option>
+                            <option value="3">Салонные фильтры</option>
+                            <option value="4">Топливные фильтры</option>
+                            <option value="5">Рычаг подвески</option>
+                            <option value="6">Шаровая опора</option>
+                            <option value="7">Стабилизатор</option>
+                            <option value="8">Втулка рычага</option>
+                            <option value="9">Подушки и опоры</option>
+                            <option value="10">Рулевая тяга</option>
+                            <option value="11">Рулевой наконечник</option>
+                        </select>
+                    </div>
+                    <button class="car-search__btn m-btn m-btn-red">
+                        <span>Поиск</span>
+                    </button>
+                </div>
+            </div>
+            <div class="car-search__bg"></div>
+
+        </header>
+        <main class="content">
+
+            <div class="filter-main filter-main2">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="">Главная</a></li>
+                            <li><a href="">Продукция</a></li>
+                            <li><span>Воздушные фильтры</span></li>
+                        </ul>
+                    </div>
+                    <div class="filter-main__inner">
+                        <div class="filter-main__content">
+                            <div class="filter-main__title">
+                                <span>ВОЗДУШНЫЕ ФИЛЬТРЫ</span>
+                                <img src="img/filter-logo2.svg" alt="">
+                            </div>
+                            <img src="img/logo.svg" alt="" class="filter-main__logo">
+                            <div class="filter-main__img">
+                                <img src="img/filter-main2.webp" alt="" class="_view1">
+                                <img src="img/filter-main2-mob.webp" alt="" class="_view2">
+                            </div>
+                            <div class="filter-main__desc">
+                                Фильтруют трансмиссионную жидкость, удерживают продукты износа и помогают сохранять стабильную работу коробки передач.
+                            </div>
+                            <div class="filter-main__items">
+                                <div class="info-item">
+                                    <img src="img/info-icon6.svg" alt="">
+                                    <div class="info-item__content">
+                                        <div class="info-item__title">
+                                            Влагостойкий
+                                        </div>
+                                        <div class="info-item__desc">
+                                            фильтровальный  материал
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <img src="img/info-icon7.svg" alt="">
+                                    <div class="info-item__content">
+                                        <div class="info-item__title">
+                                            PU-уплотнение
+                                        </div>
+                                        <div class="info-item__desc">
+                                            исключает подсос <br>
+                                        нефильтрованного воздуха
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="_go-to-filter filter-main__link m-btn m-btn-big m-btn-blue">
+                                <span>Подобрать фильтр</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-detail">
+                <div class="container">
+                    <div class="filter-detail__inner">
+                        <div class="filter-detail__col">
+                            <div class="filter-detail__title">
+                                Пыль работает <br>
+                            как <span>абразив</span>
+                            </div>
+                            <div class="text text-big">
+                                <p>
+                                    Двигателю нужно большое количество воздуха.  
+                                </p>
+                                <p>
+                                    Если воздух не фильтруется, пыль попадает в цилиндры и ускоряет износ цилиндров, поршней и поршневых колец.
+                                </p>
+                                <p class="gray-text3">
+                                    При отсутствии воздушного фильтра →
+                                </p>
+                            </div>
+                        </div>
+                        <div class="filter-detail__col2">
+                            <div class="filter-advantages-slider slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="adv-card">
+                                                <img src="img/adv-card-icon12.webp" alt="" class="adv-card__icon">
+                                                <img src="img/filter-num.svg" alt="" class="adv-card__num">
+
+                                                <div class="adv-card__content">
+                                                    <div class="adv-card__title text24 text20-big-tablet bold-text caps-text">
+                                                        в 7 раз
+                                                    </div>
+                                                    <div class="adv-card__desc">
+                                                        выше износ цилиндров
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="adv-card">
+                                                <img src="img/adv-card-icon13.webp" alt="" class="adv-card__icon">
+                                                <img src="img/filter-num2.svg" alt="" class="adv-card__num">
+
+                                                <div class="adv-card__content">
+                                                    <div class="adv-card__title text24 text20-big-tablet bold-text caps-text">
+                                                        в 3 раза
+                                                    </div>
+                                                    <div class="adv-card__desc">
+                                                        выше износ поршней
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="adv-card">
+                                                <img src="img/adv-card-icon14.webp" alt="" class="adv-card__icon">
+                                                <img src="img/filter-num3.svg" alt="" class="adv-card__num">
+
+                                                <div class="adv-card__content">
+                                                    <div class="adv-card__title text24 text20-big-tablet bold-text caps-text">
+                                                        в 8 раз
+                                                    </div>
+                                                    <div class="adv-card__desc">
+                                                        увеличивается износ поршневых колец
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="adv-card">
+                                                <img src="img/adv-card-icon15.webp" alt="" class="adv-card__icon">
+                                                <img src="img/filter-num4.svg" alt="" class="adv-card__num">
+
+                                                <div class="adv-card__content">
+                                                    <div class="adv-card__title text24 text20-big-tablet bold-text caps-text">
+                                                        на 1/3
+                                                    </div>
+                                                    <div class="adv-card__desc">
+                                                        сокращается срок службы двигателя
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="protect">
+                <div class="container">
+                    <div class="protect__inner">
+                        <div class="protect__col">
+                            <div class="protect__items">
+                                <div class="protect-card m-card">
+                                    <div class="protect-card__icon">
+
+                                        <svg width="59" height="79" viewBox="0 0 59 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path class="_fill" d="M10 12.4498C11.3531 12.4498 12.45 11.3529 12.45 9.9998C12.45 8.64671 11.3531 7.5498 10 7.5498C8.64695 7.5498 7.55005 8.64671 7.55005 9.9998C7.55005 11.3529 8.64695 12.4498 10 12.4498Z" fill="#6F6F6F" />
+                                            <path class="_fill" d="M29.5 12.4498C30.8531 12.4498 31.9501 11.3529 31.9501 9.9998C31.9501 8.64671 30.8531 7.5498 29.5 7.5498C28.147 7.5498 27.05 8.64671 27.05 9.9998C27.05 11.3529 28.147 12.4498 29.5 12.4498Z" fill="#6F6F6F" />
+                                            <path class="_fill" d="M49 12.4498C50.3531 12.4498 51.4501 11.3529 51.4501 9.9998C51.4501 8.64671 50.3531 7.5498 49 7.5498C47.647 7.5498 46.55 8.64671 46.55 9.9998C46.55 11.3529 47.647 12.4498 49 12.4498Z" fill="#6F6F6F" />
+                                            <path class="_fill" d="M19.5 22.4498C20.8531 22.4498 21.9501 21.3529 21.9501 19.9998C21.9501 18.6467 20.8531 17.5498 19.5 17.5498C18.147 17.5498 17.05 18.6467 17.05 19.9998C17.05 21.3529 18.147 22.4498 19.5 22.4498Z" fill="#6F6F6F" />
+                                            <path class="_fill" d="M39 22.4498C40.3531 22.4498 41.4501 21.3529 41.4501 19.9998C41.4501 18.6467 40.3531 17.5498 39 17.5498C37.647 17.5498 36.55 18.6467 36.55 19.9998C36.55 21.3529 37.647 22.4498 39 22.4498Z" fill="#6F6F6F" />
+                                            <path class="_fill" d="M29.5 32.4498C30.8531 32.4498 31.9501 31.3529 31.9501 29.9998C31.9501 28.6467 30.8531 27.5498 29.5 27.5498C28.147 27.5498 27.05 28.6467 27.05 29.9998C27.05 31.3529 28.147 32.4498 29.5 32.4498Z" fill="#6F6F6F" />
+                                            <path d="M6 35H21M38 35H53" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke="#6F6F6F" />
+                                            <path d="M6 35L29.5 61L53 35" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke="#6F6F6F" />
+                                            <path d="M29.5 61V74M37.5 66.5L29.5 74L21.5 66.5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke="#6F6F6F" />
+                                        </svg>
+
+
+
+
+                                    </div>
+                                    <div class="protect-card__content">
+                                        <div class="protect-card__top">
+                                            <div class="protect-card__num">
+                                                01
+                                            </div>
+                                            <div class="protect-card__title bold-text">
+                                                Воздух
+                                            </div>
+                                        </div>
+                                        <div class="protect-card__desc">
+                                            Воздух поступает через воздухозаборники.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="protect-card m-card">
+                                    <div class="protect-card__icon">
+
+
+                                        <svg width="66" height="79" viewBox="0 0 66 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.79111 3H62.2089C63.1981 3 64 3.80191 64 4.79111V12.2311C64 13.2203 63.1981 14.0222 62.2089 14.0222H3.79111C2.80191 14.0222 2 13.2203 2 12.2311V4.79111C2 3.80191 2.80191 3 3.79111 3Z" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" stroke="#6F6F6F" />
+                                            <path d="M8.88892 14.0225V65.0002M17.1556 14.0225V65.0002M25.4222 14.0225V65.0002M33.6889 14.0225V65.0002M41.9556 14.0225V65.0002M50.2222 14.0225V65.0002M57.1111 14.0225V65.0002" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" stroke="#6F6F6F" />
+                                            <path d="M3.79111 65H62.2089C63.1981 65 64 65.8019 64 66.7911V74.2311C64 75.2203 63.1981 76.0222 62.2089 76.0222H3.79111C2.80191 76.0222 2 75.2203 2 74.2311V66.7911C2 65.8019 2.80191 65 3.79111 65Z" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" stroke="#6F6F6F" />
+                                        </svg>
+
+
+
+                                    </div>
+                                    <div class="protect-card__content">
+                                        <div class="protect-card__top">
+                                            <div class="protect-card__num">
+                                                02
+                                            </div>
+                                            <div class="protect-card__title bold-text">
+                                                Пыль / SiO₂ <br>/ Крупные частицы
+                                            </div>
+                                        </div>
+                                        <div class="protect-card__desc">
+                                            Частицы и мелкий песок повышают риск образования задиров.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="protect-card m-card">
+                                    <div class="protect-card__icon">
+
+
+
+                                        <svg width="71" height="122" viewBox="0 0 71 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M35.5002 7.21533V36.7309M47.5341 20.2022L35.5002 7.21533L23.4663 20.2022" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" stroke="#6F6F6F" />
+                                            <path d="M8 45.2935H15.3333M15.3333 45.2935H55.6667M15.3333 45.2935V115M55.6667 45.2935H63M55.6667 45.2935V115M8 115H15.3333M15.3333 115H55.6667M55.6667 115H63" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" stroke="#6F6F6F" />
+                                            <path class="_fill" d="M22.8643 59.3448C24.4262 59.3448 25.6923 58.0795 25.6923 56.5188C25.6923 54.9581 24.4262 53.6929 22.8643 53.6929C21.3025 53.6929 20.0364 54.9581 20.0364 56.5188C20.0364 58.0795 21.3025 59.3448 22.8643 59.3448Z" fill="#6F6F6F" />
+                                            <path class="_fill" d="M35.4998 59.3448C37.0617 59.3448 38.3278 58.0795 38.3278 56.5188C38.3278 54.9581 37.0617 53.6929 35.4998 53.6929C33.938 53.6929 32.6719 54.9581 32.6719 56.5188C32.6719 58.0795 33.938 59.3448 35.4998 59.3448Z" fill="#6F6F6F" />
+                                            <path class="_fill" d="M48.1356 59.3448C49.6974 59.3448 50.9635 58.0795 50.9635 56.5188C50.9635 54.9581 49.6974 53.6929 48.1356 53.6929C46.5737 53.6929 45.3076 54.9581 45.3076 56.5188C45.3076 58.0795 46.5737 59.3448 48.1356 59.3448Z" fill="#6F6F6F" />
+                                            <path class="_fill" d="M35.4998 68.9649C37.0617 68.9649 38.3278 67.6997 38.3278 66.1389C38.3278 64.5782 37.0617 63.313 35.4998 63.313C33.938 63.313 32.6719 64.5782 32.6719 66.1389C32.6719 67.6997 33.938 68.9649 35.4998 68.9649Z" fill="#6F6F6F" />
+                                            <path class="_fill" d="M22.8643 78.5855C24.4262 78.5855 25.6923 77.3203 25.6923 75.7595C25.6923 74.1988 24.4262 72.9336 22.8643 72.9336C21.3025 72.9336 20.0364 74.1988 20.0364 75.7595C20.0364 77.3203 21.3025 78.5855 22.8643 78.5855Z" fill="#6F6F6F" />
+                                            <path class="_fill" d="M35.4998 78.5855C37.0617 78.5855 38.3278 77.3203 38.3278 75.7595C38.3278 74.1988 37.0617 72.9336 35.4998 72.9336C33.938 72.9336 32.6719 74.1988 32.6719 75.7595C32.6719 77.3203 33.938 78.5855 35.4998 78.5855Z" fill="#6F6F6F" />
+                                            <path class="_fill" d="M48.1356 78.5855C49.6974 78.5855 50.9635 77.3203 50.9635 75.7595C50.9635 74.1988 49.6974 72.9336 48.1356 72.9336C46.5737 72.9336 45.3076 74.1988 45.3076 75.7595C45.3076 77.3203 46.5737 78.5855 48.1356 78.5855Z" fill="#6F6F6F" />
+                                            <path class="_fill" d="M22.828 89.6519C24.3898 89.6519 25.6559 88.3867 25.6559 86.8259C25.6559 85.2652 24.3898 84 22.828 84C21.2661 84 20 85.2652 20 86.8259C20 88.3867 21.2661 89.6519 22.828 89.6519Z" fill="#6F6F6F" />
+                                            <path class="_fill" d="M35.4635 89.6519C37.0253 89.6519 38.2914 88.3867 38.2914 86.8259C38.2914 85.2652 37.0253 84 35.4635 84C33.9016 84 32.6355 85.2652 32.6355 86.8259C32.6355 88.3867 33.9016 89.6519 35.4635 89.6519Z" fill="#6F6F6F" />
+                                            <path class="_fill" d="M48.0992 89.6519C49.661 89.6519 50.9272 88.3867 50.9272 86.8259C50.9272 85.2652 49.661 84 48.0992 84C46.5374 84 45.2712 85.2652 45.2712 86.8259C45.2712 88.3867 46.5374 89.6519 48.0992 89.6519Z" fill="#6F6F6F" />
+                                            <path class="_fill" d="M35.4635 99.272C37.0253 99.272 38.2914 98.0068 38.2914 96.4461C38.2914 94.8853 37.0253 93.6201 35.4635 93.6201C33.9016 93.6201 32.6355 94.8853 32.6355 96.4461C32.6355 98.0068 33.9016 99.272 35.4635 99.272Z" fill="#6F6F6F" />
+                                            <path class="_fill" d="M22.828 108.893C24.3898 108.893 25.6559 107.627 25.6559 106.067C25.6559 104.506 24.3898 103.241 22.828 103.241C21.2661 103.241 20 104.506 20 106.067C20 107.627 21.2661 108.893 22.828 108.893Z" fill="#6F6F6F" />
+                                            <path class="_fill" d="M35.4635 108.893C37.0253 108.893 38.2914 107.627 38.2914 106.067C38.2914 104.506 37.0253 103.241 35.4635 103.241C33.9016 103.241 32.6355 104.506 32.6355 106.067C32.6355 107.627 33.9016 108.893 35.4635 108.893Z" fill="#6F6F6F" />
+                                            <path class="_fill" d="M48.0992 108.893C49.661 108.893 50.9272 107.627 50.9272 106.067C50.9272 104.506 49.661 103.241 48.0992 103.241C46.5374 103.241 45.2712 104.506 45.2712 106.067C45.2712 107.627 46.5374 108.893 48.0992 108.893Z" fill="#6F6F6F" />
+                                        </svg>
+
+
+                                    </div>
+                                    <div class="protect-card__content">
+                                        <div class="protect-card__top">
+                                            <div class="protect-card__num">
+                                                03
+                                            </div>
+                                            <div class="protect-card__title bold-text">
+                                                Фильтрующий материал
+                                            </div>
+                                        </div>
+                                        <div class="protect-card__desc">
+                                            Задерживает частицы  в складках бумаги, сохраняя поток воздуха к двигателю.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="protect-card m-card">
+                                    <div class="protect-card__icon">
+
+
+
+
+                                        <svg width="59" height="145" viewBox="0 0 59 145" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M29.5 8V25M35.5 19L29.5 25L23.5 19" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" stroke="#6F6F6F" />
+                                            <path d="M6 38H53" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" stroke="#6F6F6F" />
+                                            <path d="M16 38V51L53 58L7 68L53 78L7 88L45 97V111" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" stroke="#6F6F6F" />
+                                            <path d="M6 111H53" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" stroke="#6F6F6F" />
+                                            <path d="M29.5 136V122M35.5 128L29.5 122L23.5 128" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" stroke="#6F6F6F" />
+                                        </svg>
+
+                                    </div>
+                                    <div class="protect-card__content">
+                                        <div class="protect-card__top">
+                                            <div class="protect-card__num">
+                                                04
+                                            </div>
+                                            <div class="protect-card__title bold-text">
+                                                Чистый поток <br>к двигателю
+                                            </div>
+                                        </div>
+                                        <div class="protect-card__desc">
+                                            Очищенный воздух поступает к двигателю  без абразивных загрязнений.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="protect__col2">
+                            <div class="protect__top">
+                                <div class="text36 text20-big-tablet bold-text blue-text">
+                                    ЗАЩИТА
+                                </div>
+                                <div class="_mt10 _mt0">
+                                    <div class="text32 text20-big-tablet bold-text">
+                                        двигателя начинается <br> со впуска
+                                    </div>
+                                </div>
+                                <div class="protect__desc">
+                                    <div class="text20 _lh150">
+                                        Путь воздушной смеси внутри фильтра ALPIC:  от впуска и фильтрации до выхода очищенного воздуха во впускной коллектор.
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="img/protect.webp" alt="" class="protect__img">
+                            <div class="protect__bottom _flex">
+                                <img src="img/warning.svg" alt="">
+                                <div class="text20 text12-big-tablet _lh150">
+                                    <span class="bold-text">1 грамм</span> пыли в цилиндре может привести <span class="_no-wrap">к износу</span> верхней части цилиндра <span class="bold-text">на 0,01 мм</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-advantages product-advantages2">
+                <div class="container">
+                    <div class="product-advantages__inner">
+                        <div class="product-advantages__col">
+                            <div class="adv-super-item m-card m-backdrop">
+                                <img src="img/adv-super-icon2.svg" alt="" class="adv-super-item__icon">
+                                <div class="adv-super-item__top _grad-border">
+                                    <div class="adv-super-item__title text40 text20-big-tablet bold-text">
+                                        Фильтровальная бумага,
+                                    </div>
+                                    <div class="text24 text16-big-tablet bold-text">
+                                        которая держит форму и поток
+                                    </div>
+                                </div>
+                                <div class="adv-super-item__desc text20 gray-text3">
+                                    Влагостойкость, смоляные волокна <span class="_no-wrap">и стабильная</span> геометрия складок.
+                                </div>
+                                <img src="img/adv-super-img2.webp" alt="" class="adv-super-item__img">
+                            </div>
+                        </div>
+                        <div class="product-advantages__col2">
+                            <div class="product-advantages__items">
+                                <div class="adv-item m-card">
+                                    <div class="adv-item__top">
+                                        <img src="img/filter-logo.svg" alt="" class="adv-item__icon">
+                                        <div class="adv-item__title text32 text20-big-tablet bold-text">
+                                            Влагостойкость
+                                        </div>
+                                    </div>
+                                    <div class="adv-item__desc text20 text12-big-tablet gray-text3">
+                                        Не размокает, не теряет жесткость, не деформируется и не блокирует вентиляционные каналы. Это помогает сохранять равномерный поток воздуха и стабильную работу двигателя во влажных условиях.
+                                    </div>
+                                </div>
+
+                                <div class="adv-item m-card">
+                                    <div class="adv-item__top">
+                                        <img src="img/adv-icon8.svg" alt="" class="adv-item__icon">
+                                        <div class="adv-item__title text32 text20-big-tablet bold-text">
+                                            Синтетические <br> смоляные волокна
+                                        </div>
+                                    </div>
+                                    <div class="adv-item__desc text20 text12-big-tablet gray-text3">
+                                        Они увеличивают количество сформированных каналов, уменьшают диаметр каналов, повышают точность фильтрации и способность удерживать пыль.
+                                    </div>
+                                </div>
+
+                                <div class="adv-item m-card">
+                                    <div class="adv-item__top">
+                                        <img src="img/adv-icon9.svg" alt="" class="adv-item__icon">
+                                        <div class="adv-item__title text32 text20-big-tablet bold-text">
+                                            Тиснение складок
+                                        </div>
+                                    </div>
+                                    <div class="adv-item__desc text20 text12-big-tablet gray-text3">
+                                        Бумага ALPIC формируется методом плотного аккуратного тиснения. Складки держат форму  при высокой нагрузке, поддерживают стабильный поток воздуха и эффективно помогают снижать входное сопротивление.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hermetic">
+                <div class="container">
+                    <div class="hermetic__inner">
+                        <div class="hermetic__top _grad-border">
+                            <div class="text36 text20-big-tablet bold-text">
+                                Герметичная посадка <br>
+                                <span class="red-text2 caps-text">без подсоса воздуха</span>
+                            </div>
+                        </div>
+                        <div class="hermetic__desc">
+                            <div class="text20 text16-big-tablet">
+                                <span class="bold-text">PU-пена</span>
+                                <span class="gray-text3">износостойкая, стабильная, коррозионно стойкая и сохраняет температурную стабильность в разных условиях эксплуатации. Пена и бумага соединены плотно и бесшовно, что помогает предотвратить подсос нефильтрованного воздуха.</span>
+                            </div>
+                        </div>
+                        <div class="hermetic__img m-card">
+                            <img src="img/hermetic.webp" alt="" class="_view1">
+                            <img src="img/hermetic-mob.webp" alt="" class="_view2">
+                        </div>
+                        <div class="hermetic__items">
+                            <div class="hermetic__item">
+                                <img src="img/hermetic-icon.svg" alt="">
+                                <span class="text20 text16-big-tablet">
+                                Плотное соединение бумаги <span class="_no-wrap">и PU-пены</span>
+                                </span>
+                            </div>
+                            <div class="hermetic__item">
+                                <img src="img/hermetic-icon2.svg" alt="">
+                                <span class="text20 text16-big-tablet">
+                                Снижение риска подсоса нефильтрованного воздуха
+                            </span>
+                            </div>
+                            <div class="hermetic__item">
+                                <img src="img/hermetic-icon3.svg" alt="">
+                                <span class="text20 text16-big-tablet">
+                                Защита расходомера воздуха <span class="_no-wrap">и системы</span> впрыска топлива
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-help">
+                <div class="container">
+                    <div class="filter-help__inner">
+                        <img src="img/logo.svg" alt="" class="filter-help__logo">
+                        <div class="filter-help__title">
+                            <div class="text36 text20-big-tablet bold-text">
+                                Подберите фильтр  <span class="_no-wrap">за несколько</span> шагов
+                            </div>
+                        </div>
+                        <div class="text24 text16-big-tablet medium-text">
+                            Воспользуйтесь умной системой подбора на сайте –  это быстро и точно. Укажите оригинальный номер артикула или кросс-номер, и мы подберем подходящий фильтр ALPIC за секунды.
+                        </div>
+                        <div class="filter-help__bottom _flex">
+                            <button class="_go-to-filter filter-help__btn m-btn m-btn-big m-btn-blue">
+                                <span>Подобрать фильтр →</span>
+                            </button>
+                            <div class="filter-home-catalog__desc">
+                                <div class="text16 medium-text">
+                                    Перейти к системе подбора ALPIC
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-help__img">
+                            <img src="img/filter-help.webp" alt="" class="_view1">
+                            <img src="img/filter-help2.webp" alt="" class="_view2">
+                        </div>
+                        <div class="filter-help__partners">
+                            <img src="img/partner-icon.svg" alt="">
+                            <img src="img/partner-icon2.svg" alt="">
+                            <img src="img/partner-icon3.svg" alt="">
+                            <img src="img/partner-icon4.svg" alt="">
+                            <img src="img/partner-icon5.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <a href="" class="footer__logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <div class="footer__inner">
+                    <div class="footer__links">
+                        <ul>
+                            <li><a href="">О бренде</a></li>
+                            <li><a href="">Где купить?</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__bottom">
+                        <a href="" class="footer__conf text16 medium-text">
+                            Политика <br>
+                конфиденциальности
+                        </a>
+                        <div class="footer__c medium-text _flex">
+                            <img src="img/c.svg" alt="">
+                            <span class="text16">
+                    2024
+                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
