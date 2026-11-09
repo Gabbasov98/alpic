@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="color-scheme" content="light only">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <title>Главная</title>
+</head>
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-top__inner">
+                        <div class="lang">
+                            <a href="" class="lang__item _active">RU</a>
+                            <a href="" class="lang__item">EN</a>
+                            <a href="" class="lang__item">DE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-middle">
+                <div class="container">
+                    <div class="header-middle__inner _flex-between">
+                        <a href="" class="header__logo">
+                            <img src="img/logo.svg" alt="">
+                        </a>
+
+                        <div class="m-menu">
+                            <nav class="m-nav _flex">
+                                <div class="nav-catalog">
+                                    <div class="nav-catalog__show _flex">
+                                        <span>Каталог</span>
+                                        <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L8.5 9L16 1" stroke="black" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                    <div class="nav-catalog__hidden">
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Подвеска</a>
+                                                </div>
+                                                <button class="nav-catalog__group-btn">
+                                                    <img src="img/arrow-bottom.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="nav-catalog__group-hidden">
+                                                <ul>
+                                                    <li><a href="">Рычаг подвески</a></li>
+                                                    <li><a href="">Шаровая опора</a></li>
+                                                    <li><a href="">Стабилизатор</a></li>
+                                                    <li><a href="">Втулка рычага</a></li>
+                                                    <li><a href="">Подушки и опоры</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Рулевое управление</a>
+                                                </div>
+                                                <button class="nav-catalog__group-btn">
+                                                    <img src="img/arrow-bottom.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="nav-catalog__group-hidden">
+                                                <ul>
+                                                    <li><a href="">Рулевая тяга</a></li>
+                                                    <li><a href="">Рулевой наконечник</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Масляные фильтры</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Воздушные фильтры</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Салонные фильтры</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Топливные фильтры</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="m-nav__link">О бренде</a>
+                                <a href="" class="m-nav__link">Контакты</a>
+                                <a href="" class="m-nav__link">Где купить?</a>
+                            </nav>
+                            <div class="lang">
+                                <a href="" class="lang__item _active">RU</a>
+                                <a href="" class="lang__item">EN</a>
+                                <a href="" class="lang__item">DE</a>
+                            </div>
+                        </div>
+
+                        <div class="header-auto">
+                            <div class="header-auto__show _toggle-auto-search">
+                                <img src="img/car.svg" alt="" class="header-auto__img">
+                                <span class="header-auto__title">Поиск по авто</span>
+                            </div>
+                            <a href="" class="header-brush m-btn m-btn-red">
+                                <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.785 13.997C12.715 13.2694 12.3978 12.5696 11.8395 12.0825C11.5406 11.8216 11.1838 11.6904 10.8735 11.4574L6.0753 3.11036C5.52307 2.39554 4.49392 2.34578 3.9105 3.05004C3.35979 3.71509 3.64351 4.2414 3.88159 4.94264C4.84457 7.78079 6.12094 10.5443 7.01623 13.399L6.90365 13.9977L2.20056 14C1.03144 13.862 0.143763 12.9836 0.00380324 11.8269L0 2.28696C0.0889959 1.04357 1.01395 0.134217 2.25533 0H18.6899C19.9366 0.0852049 20.8768 1.00512 21 2.22965V11.7726C20.9095 12.9127 19.9891 13.8439 18.8519 13.9932L12.785 13.997Z" fill="white" />
+                                    <path d="M5.32313 3.63579L10.2662 12.4739C11.8777 12.8726 12.4427 14.8247 11.1494 15.9587C9.4503 17.4476 7.04637 15.6044 8.03227 13.5427L4.55934 4.09123C4.44678 3.59975 4.95672 3.34673 5.32238 3.63579H5.32313Z" fill="white" />
+                                </svg>
+                                <span>Каталог щеток</span>
+                            </a>
+                        </div>
+
+                        <div class="burger">
+                            <div class="burger__btn _view1">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="burger__btn _view2">
+                                <img src="img/close.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="header-bottom__inner _flex-center">
+                        <div class="header-search">
+                            <div class="header-search__field">
+                                <input type="text" placeholder="Введите код OEM, Alpic, аналог..." data-placeholder="Введите код OEM, Alpic, аналог..." data-placeholder-mob="OEM, Alpic, аналог...">
+                            </div>
+                            <button class="header-search__btn m-btn m-btn-red">
+                                <span>Поиск</span>
+                            </button>
+                            <div class="header-search__variants">
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101</span> Alpic </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101123</span> NewBrand </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101123</span> NewBrand123 </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101123</span> NewBrand </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101-123456</span> New </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101123</span> NewBrand NewBrand </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101</span> New NewBrand </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101123-123654</span> NewBrand NewBrand </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-search">
+                <div class="car-search__top _flex">
+                    <img src="img/car.svg" alt="" class="car-search__img">
+                    <div class="car-search__title text20 semi-bold-text">
+                        Поиск по авто
+                    </div>
+                    <button class="car-search__close _toggle-auto-search">
+                        <img src="img/close3.svg" alt="">
+                    </button>
+                </div>
+                <div class="car-search__grid">
+                    <div class="select-block">
+                        <select class="js-select2" name="brand" data-css-class="_select1" placeholder="Марка">
+                            <option value=""></option>
+                            <option value="367">Абаза</option>
+                            <option value="368">ACURA</option>
+                            <option value="369">ALFA ROMEO</option>
+                            <option value="370">AUDI</option>
+                            <option value="371">BENTLEY</option>
+                            <option value="372">BMW</option>
+                            <option value="373">BUICK</option>
+                            <option value="374">CADILLAC</option>
+                            <option value="375">CHERY (18)</option>
+                            <option value="376">FIAT</option>
+                            <option value="377">METRO-CAMMELL-WEYMANN</option>
+                            <option value="378">VOLVO CONSTRUCTION EQUIPMENT</option>
+                            <option value="370">FORD</option>
+                            <option value="380">GAZ</option>
+                            <option value="381">GMC</option>
+                            <option value="382">GREAT WALL</option>
+                            <option value="383">BENTLEY</option>
+                            <option value="384">BMW</option>
+                            <option value="385">BUICK</option>
+                            <option value="386">CADILLAC</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <select class="js-select2" name="model" data-css-class="_select2" placeholder="Модель">
+                            <option value=""></option>
+                            <option value="1">100 C1 Saloon (801, 803, 805, 807, 811, 813, F104) | 68-</option>
+                            <option value="2">TOURNEO CONNECT / GRAND TOURNEO CONNECT V408 MPV | 13-</option>
+                            <option value="3">BERLINGO / BERLINGO FIRST MPV (MF_, GJK_, GFK_) | 96-</option>
+                            <option value="4">TRANSPORTER T4 Bus (70B, 70C, 7DB, 7DK, 70J, 70K, 7DC, 7DJ) | 90-</option>
+                            <option value="5">121 II (DB) | 90-</option>
+                            <option value="6">121 III Hatchback Van (JASM, JBSM) | 96-</option>
+                            <option value="7">TRANSPORTER T4 Bus (70B, 70C, 7DB, 7DK, 70J, 70K, 7DC, 7DJ) | 90-</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <select class="js-select2" name="modification" data-css-class="_select3" placeholder="Модификация">
+                            <option value=""></option>
+                            <option value="1">1.4 i (MFKFX, MFKFW, GJKFWB, GJKFWC, GFKFWC) | 55kW/75Ps | KFX (TU3JP),KFW (TU3JP) | 96-11</option>
+                            <option value="2">1.2 PureTech 110 (2RHNZB, 2RHNZW, 2RHNPX, 2RHNPJ) | 81kW/110Ps | HNZ (EB2DT),HNV (EB2DTM),HNP (EB2ADT) | 17-</option>
+                            <option value="3">2.0 HDi 110 | 80kW/109Ps | RHZ (DW10ATED),RHZ (DW10CTED),RHZ (DW10BTED),RHZ (DW10CTED+),RHZ (DW10BTED+) | 03-06</option>
+                            <option value="4">1.6 16V (LS09, LS0L, LS0M, LS0P, LS0V, LS18, LS1S, LS1V,... | 77kW/105Ps | K4M 690,K4M 696,K4M 694,K4M 697,K4M 698 | 06-</option>
+                            <option value="5">1.3 D Multijet (225AXE1A, 225CXE1A, 225AXH1A, 225AXL1A,... | 70kW/95Ps | 199 B1.000,330 A1.000,552 83 775 | 10-</option>
+                            <option value="6">35C17, 35S17, 40C17, 45C17, 50C17, 60C17, 65C17, 70C17 | 125kW/170Ps | F1CE3481C,F1CE3481C,F1CE3481C,F1CE3481C,F1CE3481C | 11-14</option>
+                            <option value="7">NaturalPower 35S14, 35C14, 40C14, 50C14, 60C14, 65C14,... | 100kW/136Ps | F1CFA401A,F1CFA401B,F1CFA401C | 14-</option>
+                            <option value="8">1.5 dCi 75 / Blue dCi 75 (B8JW, B8M4, B8AH, B8M7, B8M6) | 55kW/75Ps | K9K 612,K9K 626,K9K 838,K9K 872 | 12-</option>
+                            <option value="9">35C17, 35S17, 40C17, 45C17, 50C17, 60C17, 65C17, 70C17 | 125kW/170Ps | F1CE3481C,F1CE3481C,F1CE3481C,F1CE3481C,F1CE3481C | 11-14</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <select class="js-select2" name="productGroup" data-css-class="_select4" placeholder="Товарная группа">
+                            <option value=""></option>
+                            <option value="1">Масляные фильтры</option>
+                            <option value="2">Воздушные фильтры</option>
+                            <option value="3">Салонные фильтры</option>
+                            <option value="4">Топливные фильтры</option>
+                            <option value="5">Рычаг подвески</option>
+                            <option value="6">Шаровая опора</option>
+                            <option value="7">Стабилизатор</option>
+                            <option value="8">Втулка рычага</option>
+                            <option value="9">Подушки и опоры</option>
+                            <option value="10">Рулевая тяга</option>
+                            <option value="11">Рулевой наконечник</option>
+                        </select>
+                    </div>
+                    <button class="car-search__btn m-btn m-btn-red">
+                        <span>Поиск</span>
+                    </button>
+                </div>
+            </div>
+            <div class="car-search__bg"></div>
+
+        </header>
+        <main class="content _hidden">
+
+            <div class="filter-main brake-main1">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="">Главная</a></li>
+                            <li><a href="">Продукция</a></li>
+                            <li><span>Диски и барабаны</span></li>
+                        </ul>
+                    </div>
+                    <div class="filter-main__inner">
+                        <div class="filter-main__content">
+                            <div class="filter-main__title">
+                                <span>
+                                ДИСКИ  <br>
+                                И БАРАБАНЫ
+                            </span>
+                            </div>
+                            <img src="img/logo.svg" alt="" class="filter-main__logo">
+                            <div class="filter-main__img">
+                                <img src="img/filter-img16.webp" alt="">
+                            </div>
+                            <div class="filter-main__desc">
+                                Тормозные диски и барабаны с точной геометрией, защитным покрытием и конструкцией<span class="_hide-tablet">, соответствующей параметрам конкретного автомобиля.</span>
+                            </div>
+                            <div class="filter-main__items _big">
+                                <div class="info-item">
+                                    <img src="img/info-icon8.svg" alt="">
+                                    <div class="info-item__content">
+                                        <div class="info-item__title">
+                                            Точная геометрия
+                                        </div>
+                                        <div class="info-item__desc">
+                                            равномерный контакт без биения и вибраций
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <img src="img/info-icon2.svg" alt="">
+                                    <div class="info-item__content">
+                                        <div class="info-item__title">
+                                            GEOMET 360
+                                        </div>
+                                        <div class="info-item__desc">
+                                            защита от коррозии при температуре выше 400°C
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="_go-to-filter filter-main__link m-btn m-btn-big m-btn-blue">
+                                <span>Подобрать диски \ барабаны</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brake-step brake-step2">
+                <div class="container">
+                    <div class="brake-step__top">
+                        <img src="img/filter-num.svg" alt="">
+                        <div class="brake-step__top-text bold-text">
+                            <div class="text36 text24-big-tablet blue-text">
+                                ВЫСОКОУГЛЕРОДИСТЫЙ ЧУГУН
+                            </div>
+                            <div class="text32 text20-big-tablet">
+                                баланс твёрдости и прочности
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brake-step__info">
+                        <div class="brake-step__info-col">
+                            <img src="img/brake-step2.webp" alt="" class="brake-step__info-img">
+                        </div>
+                        <div class="brake-step__info-col2">
+                            <div class="text">
+                                <p>
+                                    В тормозных дисках ALPIC используется высокоуглеродистый чугун. Материал сочетает необходимую твёрдость и прочность, сохраняя устойчивость к рабочим нагрузкам.
+                                </p>
+                                <p>
+                                    Такой баланс помогает диску сохранять геометрию <span class="_no-wrap">и равномерно</span> работать в паре с колодками.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="material">
+                        <div class="material__col m-card">
+                            <div class="text24 text20-big-tablet bold-text">
+                                МАТЕРИАЛ ДИСКОВ ALPIC
+                            </div>
+                            <div class="material__desc text16 gray-text3">
+                                Высокоуглеродистый чугун – основа для прочности, стабильной геометрии  и работы под нагрузкой.
+                            </div>
+                            <img src="img/material.webp" alt="" class="material__img">
+                            <img src="img/material2.webp" alt="" class="material__img2">
+                        </div>
+                        <div class="material__col2">
+                            <div class="material__top _grad-border">
+                                <div class="text32 text20-big-tablet blue-text bold-text">
+                                    ТВЁРДОСТЬ + ПРОЧНОСТЬ
+                                </div>
+                            </div>
+                            <div class="material__items">
+                                <div class="material__item">
+                                    <div class="text20 text16-big-tablet caps-text bold-text">
+                                        СБАЛАНСИРОВАННЫЕ СВОЙСТВА МАТЕРИАЛА
+                                    </div>
+                                    <div class="text20 text16-big-tablet gray-text3">
+                                        Диск сохраняет свою рабочую форму и устойчивость при повторяющихся нагрузках. Твёрдость отвечает за рабочую поверхность, а прочность  за устойчивость детали к нагрузкам.
+                                    </div>
+                                </div>
+                                <div class="material__item">
+                                    <div class="text20 text16-big-tablet caps-text bold-text">
+                                        ПАРАМЕТРЫ ПОД КОНКРЕТНЫЙ АВТОМОБИЛЬ
+                                    </div>
+                                    <div class="text20 text16-big-tablet gray-text3">
+                                        Тип вентиляции, количество и форма рёбер диска соответствуют конструкции тормозной системы автомобиля. Для барабанов контролируется рабочий диаметр и геометрия поверхности.
+                                    </div>
+                                </div>
+                                <div class="material__item">
+                                    <div class="text20 text16-big-tablet caps-text bold-text">
+                                        ТОЧНОСТЬ = КОНТАКТ
+                                    </div>
+                                    <div class="text20 text16-big-tablet gray-text3">
+                                        Контроль размеров, толщины и рабочих поверхностей помогает дискам  и барабанам равномерно взаимодействовать с колодками. Точная геометрия помогает снизить риск биения, лишнего шума и вибраций.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brake-step">
+                <div class="container">
+                    <div class="brake-step__top">
+                        <img src="img/filter-num2.svg" alt="">
+                        <div class="brake-step__top-text bold-text">
+                            <div class="text36 text24-big-tablet blue-text">
+                                GEOMET 360
+                            </div>
+                            <div class="text32 text20-big-tablet">
+                                защита от коррозии и температуры
+                            </div>
+                        </div>
+                    </div>
+                    <div class="easy-construct easy-construct2">
+                        <div class="easy-construct__col">
+                            <div class="no-copper">
+                                <div class="text18 text12-big-tablet">
+                                    GEOMET 360
+                                </div>
+                                <div class="no-copper__num">
+                                    >400°C
+                                </div>
+                                <div class="text24 text20-big-tablet bold-text">
+                                    ЗАЩИТНЫЕ СВОЙСТВА
+                                </div>
+                                <div class="_mt16">
+                                    <div class="text20 text16-big-tablet">
+                                        Сохраняются даже  <span class="_no-wrap">при температуре</span> выше 400°C
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ece m-card">
+                                <div class="ece__top _flex">
+                                    <img src="img/adv-icon.svg" alt="">
+                                    <span class="text24 text16-big-tablet blue-text bold-text">
+                                    СТОЙКОСТЬ
+                                </span>
+                                </div>
+                                <div class="ece__desc text20 text16-big-tablet gray-text3">
+                                    К щелочам и растворителям. Покрытие защищает от коррозии  <span class="_no-wrap">и помогает</span> улучшить теплообмен.
+                                </div>
+                            </div>
+                            <div class="easy-construct__desc">
+                                <div class="text20 text16-big-tablet gray-text3">
+                                    Полный список артикулов и моделей, подробные характеристики каждого  можно изучить в каталоге.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="easy-construct__col2">
+                            <div class="text24 text18-big-tablet bold-text blue-text">
+                                КОНСТРУКЦИЯ ДИСКА <span class="_no-wrap">И БАРАБАНА</span>
+                            </div>
+                            <div class="_mt10">
+                                <div class="text20 text16-big-tablet">
+                                    Рабочие поверхности, посадка, вентиляция и диаметр соответствуют параметрам конкретной детали.
+                                </div>
+                            </div>
+                            <img src="img/easy-construct3.webp" alt="" class="easy-construct__img">
+                            <div class="easy-construct__desc2">
+                                <div class="text20 text16-big-tablet gray-text3">
+                                    Полный список артикулов и моделей, подробные характеристики каждого  можно изучить в каталоге.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-help pendants-help">
+                <div class="container">
+                    <div class="filter-help__inner">
+                        <img src="img/logo.svg" alt="" class="filter-help__logo">
+                        <div class="filter-help__title">
+                            <div class="text36 text20-big-tablet bold-text">
+                                Подберите детали тормозной системы за несколько шагов
+                            </div>
+                        </div>
+                        <div class="text24 text16-big-tablet medium-text">
+                            Воспользуйтесь умной системой подбора на сайте –  это быстро и точно. Укажите оригинальный номер артикула или кросс-номер, и мы подберем подходящие детали ALPIC за секунды.
+                        </div>
+                        <div class="filter-help__bottom _flex">
+                            <button class="_go-to-filter filter-help__btn m-btn m-btn-big m-btn-blue">
+                                <span>Подобрать деталь →</span>
+                            </button>
+                            <div class="filter-home-catalog__desc">
+                                <div class="text16 medium-text">
+                                    Перейти к системе подбора ALPIC
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-help__img">
+                            <img src="img/filter-help4.webp" alt="" class="_view1">
+                            <img src="img/filter-help4-mob.webp" alt="" class="_view2">
+                        </div>
+                        <div class="filter-help__partners">
+                            <img src="img/partner-icon.svg" alt="">
+                            <img src="img/partner-icon2.svg" alt="">
+                            <img src="img/partner-icon3.svg" alt="">
+                            <img src="img/partner-icon4.svg" alt="">
+                            <img src="img/partner-icon5.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <a href="" class="footer__logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <div class="footer__inner">
+                    <div class="footer__links">
+                        <ul>
+                            <li><a href="">О бренде</a></li>
+                            <li><a href="">Где купить?</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__bottom">
+                        <a href="" class="footer__conf text16 medium-text">
+                            Политика <br>
+                конфиденциальности
+                        </a>
+                        <div class="footer__c medium-text _flex">
+                            <img src="img/c.svg" alt="">
+                            <span class="text16">
+                    2024
+                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

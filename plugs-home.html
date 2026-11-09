@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="color-scheme" content="light only">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <title>Главная</title>
+</head>
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-top__inner">
+                        <div class="lang">
+                            <a href="" class="lang__item _active">RU</a>
+                            <a href="" class="lang__item">EN</a>
+                            <a href="" class="lang__item">DE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-middle">
+                <div class="container">
+                    <div class="header-middle__inner _flex-between">
+                        <a href="" class="header__logo">
+                            <img src="img/logo.svg" alt="">
+                        </a>
+
+                        <div class="m-menu">
+                            <nav class="m-nav _flex">
+                                <div class="nav-catalog">
+                                    <div class="nav-catalog__show _flex">
+                                        <span>Каталог</span>
+                                        <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L8.5 9L16 1" stroke="black" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                    <div class="nav-catalog__hidden">
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Подвеска</a>
+                                                </div>
+                                                <button class="nav-catalog__group-btn">
+                                                    <img src="img/arrow-bottom.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="nav-catalog__group-hidden">
+                                                <ul>
+                                                    <li><a href="">Рычаг подвески</a></li>
+                                                    <li><a href="">Шаровая опора</a></li>
+                                                    <li><a href="">Стабилизатор</a></li>
+                                                    <li><a href="">Втулка рычага</a></li>
+                                                    <li><a href="">Подушки и опоры</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Рулевое управление</a>
+                                                </div>
+                                                <button class="nav-catalog__group-btn">
+                                                    <img src="img/arrow-bottom.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="nav-catalog__group-hidden">
+                                                <ul>
+                                                    <li><a href="">Рулевая тяга</a></li>
+                                                    <li><a href="">Рулевой наконечник</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Масляные фильтры</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Воздушные фильтры</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Салонные фильтры</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nav-catalog__group">
+                                            <div class="nav-catalog__group-show">
+                                                <div class="nav-catalog__group-title">
+                                                    <a href="">Топливные фильтры</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="m-nav__link">О бренде</a>
+                                <a href="" class="m-nav__link">Контакты</a>
+                                <a href="" class="m-nav__link">Где купить?</a>
+                            </nav>
+                            <div class="lang">
+                                <a href="" class="lang__item _active">RU</a>
+                                <a href="" class="lang__item">EN</a>
+                                <a href="" class="lang__item">DE</a>
+                            </div>
+                        </div>
+
+                        <div class="header-auto">
+                            <div class="header-auto__show _toggle-auto-search">
+                                <img src="img/car.svg" alt="" class="header-auto__img">
+                                <span class="header-auto__title">Поиск по авто</span>
+                            </div>
+                            <a href="" class="header-brush m-btn m-btn-red">
+                                <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.785 13.997C12.715 13.2694 12.3978 12.5696 11.8395 12.0825C11.5406 11.8216 11.1838 11.6904 10.8735 11.4574L6.0753 3.11036C5.52307 2.39554 4.49392 2.34578 3.9105 3.05004C3.35979 3.71509 3.64351 4.2414 3.88159 4.94264C4.84457 7.78079 6.12094 10.5443 7.01623 13.399L6.90365 13.9977L2.20056 14C1.03144 13.862 0.143763 12.9836 0.00380324 11.8269L0 2.28696C0.0889959 1.04357 1.01395 0.134217 2.25533 0H18.6899C19.9366 0.0852049 20.8768 1.00512 21 2.22965V11.7726C20.9095 12.9127 19.9891 13.8439 18.8519 13.9932L12.785 13.997Z" fill="white" />
+                                    <path d="M5.32313 3.63579L10.2662 12.4739C11.8777 12.8726 12.4427 14.8247 11.1494 15.9587C9.4503 17.4476 7.04637 15.6044 8.03227 13.5427L4.55934 4.09123C4.44678 3.59975 4.95672 3.34673 5.32238 3.63579H5.32313Z" fill="white" />
+                                </svg>
+                                <span>Каталог щеток</span>
+                            </a>
+                        </div>
+
+                        <div class="burger">
+                            <div class="burger__btn _view1">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="burger__btn _view2">
+                                <img src="img/close.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="header-bottom__inner _flex-center">
+                        <div class="header-search">
+                            <div class="header-search__field">
+                                <input type="text" placeholder="Введите код OEM, Alpic, аналог..." data-placeholder="Введите код OEM, Alpic, аналог..." data-placeholder-mob="OEM, Alpic, аналог...">
+                            </div>
+                            <button class="header-search__btn m-btn m-btn-red">
+                                <span>Поиск</span>
+                            </button>
+                            <div class="header-search__variants">
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101</span> Alpic </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101123</span> NewBrand </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101123</span> NewBrand123 </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101123</span> NewBrand </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101-123456</span> New </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101123</span> NewBrand NewBrand </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101</span> New NewBrand </a>
+                                </div>
+                                <div class="header-search__variant">
+                                    <a href=""><span>AFO101123-123654</span> NewBrand NewBrand </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-search">
+                <div class="car-search__top _flex">
+                    <img src="img/car.svg" alt="" class="car-search__img">
+                    <div class="car-search__title text20 semi-bold-text">
+                        Поиск по авто
+                    </div>
+                    <button class="car-search__close _toggle-auto-search">
+                        <img src="img/close3.svg" alt="">
+                    </button>
+                </div>
+                <div class="car-search__grid">
+                    <div class="select-block">
+                        <select class="js-select2" name="brand" data-css-class="_select1" placeholder="Марка">
+                            <option value=""></option>
+                            <option value="367">Абаза</option>
+                            <option value="368">ACURA</option>
+                            <option value="369">ALFA ROMEO</option>
+                            <option value="370">AUDI</option>
+                            <option value="371">BENTLEY</option>
+                            <option value="372">BMW</option>
+                            <option value="373">BUICK</option>
+                            <option value="374">CADILLAC</option>
+                            <option value="375">CHERY (18)</option>
+                            <option value="376">FIAT</option>
+                            <option value="377">METRO-CAMMELL-WEYMANN</option>
+                            <option value="378">VOLVO CONSTRUCTION EQUIPMENT</option>
+                            <option value="370">FORD</option>
+                            <option value="380">GAZ</option>
+                            <option value="381">GMC</option>
+                            <option value="382">GREAT WALL</option>
+                            <option value="383">BENTLEY</option>
+                            <option value="384">BMW</option>
+                            <option value="385">BUICK</option>
+                            <option value="386">CADILLAC</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <select class="js-select2" name="model" data-css-class="_select2" placeholder="Модель">
+                            <option value=""></option>
+                            <option value="1">100 C1 Saloon (801, 803, 805, 807, 811, 813, F104) | 68-</option>
+                            <option value="2">TOURNEO CONNECT / GRAND TOURNEO CONNECT V408 MPV | 13-</option>
+                            <option value="3">BERLINGO / BERLINGO FIRST MPV (MF_, GJK_, GFK_) | 96-</option>
+                            <option value="4">TRANSPORTER T4 Bus (70B, 70C, 7DB, 7DK, 70J, 70K, 7DC, 7DJ) | 90-</option>
+                            <option value="5">121 II (DB) | 90-</option>
+                            <option value="6">121 III Hatchback Van (JASM, JBSM) | 96-</option>
+                            <option value="7">TRANSPORTER T4 Bus (70B, 70C, 7DB, 7DK, 70J, 70K, 7DC, 7DJ) | 90-</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <select class="js-select2" name="modification" data-css-class="_select3" placeholder="Модификация">
+                            <option value=""></option>
+                            <option value="1">1.4 i (MFKFX, MFKFW, GJKFWB, GJKFWC, GFKFWC) | 55kW/75Ps | KFX (TU3JP),KFW (TU3JP) | 96-11</option>
+                            <option value="2">1.2 PureTech 110 (2RHNZB, 2RHNZW, 2RHNPX, 2RHNPJ) | 81kW/110Ps | HNZ (EB2DT),HNV (EB2DTM),HNP (EB2ADT) | 17-</option>
+                            <option value="3">2.0 HDi 110 | 80kW/109Ps | RHZ (DW10ATED),RHZ (DW10CTED),RHZ (DW10BTED),RHZ (DW10CTED+),RHZ (DW10BTED+) | 03-06</option>
+                            <option value="4">1.6 16V (LS09, LS0L, LS0M, LS0P, LS0V, LS18, LS1S, LS1V,... | 77kW/105Ps | K4M 690,K4M 696,K4M 694,K4M 697,K4M 698 | 06-</option>
+                            <option value="5">1.3 D Multijet (225AXE1A, 225CXE1A, 225AXH1A, 225AXL1A,... | 70kW/95Ps | 199 B1.000,330 A1.000,552 83 775 | 10-</option>
+                            <option value="6">35C17, 35S17, 40C17, 45C17, 50C17, 60C17, 65C17, 70C17 | 125kW/170Ps | F1CE3481C,F1CE3481C,F1CE3481C,F1CE3481C,F1CE3481C | 11-14</option>
+                            <option value="7">NaturalPower 35S14, 35C14, 40C14, 50C14, 60C14, 65C14,... | 100kW/136Ps | F1CFA401A,F1CFA401B,F1CFA401C | 14-</option>
+                            <option value="8">1.5 dCi 75 / Blue dCi 75 (B8JW, B8M4, B8AH, B8M7, B8M6) | 55kW/75Ps | K9K 612,K9K 626,K9K 838,K9K 872 | 12-</option>
+                            <option value="9">35C17, 35S17, 40C17, 45C17, 50C17, 60C17, 65C17, 70C17 | 125kW/170Ps | F1CE3481C,F1CE3481C,F1CE3481C,F1CE3481C,F1CE3481C | 11-14</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <select class="js-select2" name="productGroup" data-css-class="_select4" placeholder="Товарная группа">
+                            <option value=""></option>
+                            <option value="1">Масляные фильтры</option>
+                            <option value="2">Воздушные фильтры</option>
+                            <option value="3">Салонные фильтры</option>
+                            <option value="4">Топливные фильтры</option>
+                            <option value="5">Рычаг подвески</option>
+                            <option value="6">Шаровая опора</option>
+                            <option value="7">Стабилизатор</option>
+                            <option value="8">Втулка рычага</option>
+                            <option value="9">Подушки и опоры</option>
+                            <option value="10">Рулевая тяга</option>
+                            <option value="11">Рулевой наконечник</option>
+                        </select>
+                    </div>
+                    <button class="car-search__btn m-btn m-btn-red">
+                        <span>Поиск</span>
+                    </button>
+                </div>
+            </div>
+            <div class="car-search__bg"></div>
+
+        </header>
+        <main class="content">
+
+            <div class="filter-home-main plugs-main">
+                <div class="container">
+                    <div class="plugs-main__inner">
+                        <div class="filter-home-main__img">
+                            <img src="img/plugs-main.webp" alt="" class="_view1">
+                            <img src="img/plugs-main-mob.webp" alt="" class="_view2">
+                        </div>
+                        <div class="filter-home-main__items">
+                            <div class="filter-home-main__item">
+                                <img src="img/adv-icon.svg" alt="">
+                                <div class="text24 text16-big-tablet">
+                                    <span>Точный подбор</span> <br>  под параметры двигателя
+                                </div>
+                            </div>
+                            <div class="filter-home-main__item">
+                                <img src="img/adv-icon2.svg" alt="">
+                                <div class="text24 text16-big-tablet">
+                                    <span>До 70 000 км</span>  расширенной гарантии
+                                </div>
+                            </div>
+                            <div class="filter-home-main__item">
+                                <img src="img/adv-icon3.svg" alt="">
+                                <div class="text24 text16-big-tablet">
+                                    <span>3 серии </span> <br> - Nickel, Iridium и Platinum
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filter-home-catalog plugs-catalog _tabs-parent">
+                <div class="container">
+                    <div class="filter-home-catalog__top _flex-between">
+                        <div class="filter-home-catalog__title">
+                            <div class="filter-home-catalog__title-row">
+                                <span class="blue-text">ТРИ СЕРИИ </span>
+                            </div>
+                            <div class="filter-home-catalog__title-row2">
+                                под разные требования двигателя
+                            </div>
+                        </div>
+                        <div class="filter-home-catalog__desc">
+                            <div class="text20 _lh150 medium-text">
+                                Материалы и конфигурация электродов подбираются с учётом параметров конкретного двигателя
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plugs-catalog__tabs">
+                        <div class="plugs-catalog__tab _tab _active" data-tab="_tab1">
+                            <span>PLATINUM</span>
+                        </div>
+                        <div class="plugs-catalog__tab _tab" data-tab="_tab2">
+                            <span>IRIDIUM</span>
+                        </div>
+                        <div class="plugs-catalog__tab _tab" data-tab="_tab3">
+                            <span>NICKEL</span>
+                        </div>
+                    </div>
+                    <div class="plugs-catalog__items">
+                        <div class="m-tab-content _tab1 _active">
+                            <div class="plug-parent">
+                                <div class="plug-parent__bottom">
+                                    <div class="text20 text16-tablet bold-text">
+                                        <span class="_view1">
+                                            Подсерии Platinum:
+                                        </span>
+                                        <span class="_view2">
+                                            Другие варианты серии:
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="plug-parent__tabs">
+                                    <div class="plug-parent__tab" data-tab="_tab1">
+                                        <span>Single</span>
+                                    </div>
+                                    <div class="plug-parent__tab" data-tab="_tab2">
+                                        <span>Double</span>
+                                    </div>
+                                    <div class="plug-parent__tab" data-tab="_tab3">
+                                        <span>PP 4E</span>
+                                    </div>
+                                </div>
+                                <div class="plug-parent__home">
+                                    <img src="img/plug-logo.svg" alt="" class="plug-parent__logo">
+                                    <div class="plug-parent__img">
+                                        <img src="img/plug-img.webp" alt="">
+                                    </div>
+                                    <div class="plug-parent__grid">
+                                        <div class="plug-parent__col">
+                                            <div class="plug-parent__items">
+                                                <div class="plug-parent__item">
+                                                    <span>Рабочие электроды:</span> платина
+                                                </div>
+                                                <div class="plug-parent__item">
+                                                    <span>Боковой электрод:</span> никель \ платина
+                                                </div>
+                                                <div class="plug-parent__item _hide-mob">
+                                                    <span>Особенность:</span> устойчивость  к температурному и электрическому  износу, более длительное сохранение геометрии электрода
+                                                </div>
+                                                <div class="plug-parent__item">
+                                                    <span>ТЕХНОЛОГИЯ:</span> лазерная сварка бокового электрода и иридиевой / платиновой вставки
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="plug-parent__col2 _hide-mob">
+                                            <div class="text20 bold-text blue-text">
+                                                Рабочая геометрия сохраняется заметно дольше
+                                            </div>
+                                            <div class="text">
+                                                <p>
+                                                    Платина замедляет износ электродов под воздействием температуры и повторяющихся электрических разрядов.
+                                                </p>
+
+                                                <p>
+                                                    Это помогает дольше сохранять установленный зазор, а также характеристики свечи в процессе эксплуатации.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="plug-card plug-card1 _tab1">
+                                    <div class="text24 blue-text bold-text _hide-mob">
+                                        PLATINUM SERIES
+                                    </div>
+                                    <img src="img/plug-logo2.svg" alt="" class="plug-card__logo">
+                                    <div class="plug-card__img">
+                                        <img src="img/plug-img3.webp" alt="" class="_view1">
+                                        <img src="img/plug-img3-mob.webp" alt="" class="_view2">
+                                    </div>
+                                    <div class="plug-card__info _hide-mob">
+                                        <div class="text20 bold-text blue-text">
+                                            Платина в центральной рабочей зоне электрода
+                                        </div>
+                                        <div class="_mt24">
+                                            <div class="text20 gray-text4">
+                                                Платина снижает искровую эрозию центрального электрода и помогает сохранять его геометрию в процессе эксплуатации.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="plug-card__items _hide-mob">
+                                        <div class="plug-card__item plug-card__item1">
+                                            <div class="text20 _lh150 bold-text">
+                                                Боковой электрод
+                                            </div>
+                                            <div class="text20 gray-text4">
+                                                Никелевый сплав
+                                            </div>
+                                            <img src="img/line.svg" alt="">
+                                        </div>
+                                        <div class="plug-card__item plug-card__item2">
+                                            <div class="text20 _lh150 bold-text">
+                                                Центральный электрод
+                                            </div>
+                                            <div class="text20 gray-text4">
+                                                Платина
+                                            </div>
+                                            <img src="img/line2.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="plug-parent__col">
+                                        <div class="plug-parent__items">
+                                            <div class="plug-parent__item">
+                                                <span>Рабочие электроды:</span> платина
+                                            </div>
+                                            <div class="plug-parent__item">
+                                                <span>Боковой электрод:</span> никелевый сплав
+                                            </div>
+                                            <div class="plug-parent__item">
+                                                Платина снижает искровую эрозию центрального электрода.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="plug-card plug-card2 _tab2">
+                                    <div class="text24 blue-text bold-text _hide-mob">
+                                        PLATINUM SERIES
+                                    </div>
+                                    <img src="img/plug-logo3.svg" alt="" class="plug-card__logo">
+                                    <div class="plug-card__img">
+                                        <img src="img/plug-img2.webp" alt="" class="_view1">
+                                        <img src="img/plug-img2-mob.webp" alt="" class="_view2">
+                                    </div>
+                                    <div class="plug-card__info _hide-mob">
+                                        <div class="text20 bold-text blue-text">
+                                            Стабильная геометрия зазора
+                                        </div>
+                                        <div class="_mt24">
+                                            <div class="text20 gray-text4">
+                                                Платина используется с обеих сторон рабочей пары и эффективно снижает износ центрального  и бокового электродов.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="plug-card__items _hide-mob">
+                                        <div class="plug-card__item plug-card__item1">
+                                            <div class="text20 _lh150 bold-text">
+                                                Боковой электрод
+                                            </div>
+                                            <div class="text20 gray-text4">
+                                                Никелевый сплав
+                                            </div>
+                                            <img src="img/line.svg" alt="">
+                                        </div>
+                                        <div class="plug-card__item plug-card__item2">
+                                            <div class="text20 _lh150 bold-text">
+                                                Центральный электрод
+                                            </div>
+                                            <div class="text20 gray-text4">
+                                                Платина
+                                            </div>
+                                            <img src="img/line2.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="plug-parent__col">
+                                        <div class="plug-parent__items">
+                                            <div class="plug-parent__item">
+                                                <span>Рабочие электроды:</span> платина
+                                            </div>
+                                            <div class="plug-parent__item">
+                                                <span>Боковой электрод:</span> платина
+                                            </div>
+                                            <div class="plug-parent__item">
+                                                Платина используется с обеих сторон рабочей пары.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="plug-card plug-card3 _tab3">
+                                    <div class="text24 blue-text bold-text _hide-mob">
+                                        PLATINUM SERIES
+                                    </div>
+                                    <img src="img/plug-logo4.svg" alt="" class="plug-card__logo">
+                                    <div class="plug-card__img">
+                                        <img src="img/plug-img4.webp" alt="" class="_view1">
+                                        <img src="img/plug-img5-mob.webp" alt="" class="_view2">
+                                    </div>
+                                    <div class="plug-card__info _hide-mob">
+                                        <div class="text20 bold-text blue-text">
+                                            Одна искра, четыре рабочих направления
+                                        </div>
+                                        <div class="_mt16">
+                                            <div class="text20 gray-text4">
+                                                <p>Четыре боковых электрода не создают четыре искры одновременно.</p>
+
+                                                <p>Они поочерёдно принимают нагрузку, распределяя износ между рабочими зонами.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="plug-card__items _hide-mob">
+                                        <div class="plug-card__item plug-card__item1">
+                                            <div class="text20 _lh150 bold-text">
+                                                Боковой электрод
+                                            </div>
+                                            <div class="text20 gray-text4">
+                                                4 электрода, никелевый сплав
+                                            </div>
+                                            <img src="img/line3.svg" alt="">
+                                        </div>
+                                        <div class="plug-card__item plug-card__item2">
+                                            <div class="text20 _lh150 bold-text">
+                                                Центральный электрод
+                                            </div>
+                                            <div class="text20 gray-text4">
+                                                Платина
+                                            </div>
+                                            <img src="img/line4.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="plug-parent__col">
+                                        <div class="plug-parent__items">
+                                            <div class="plug-parent__item">
+                                                <span>Рабочие электроды:</span> платина
+                                            </div>
+                                            <div class="plug-parent__item">
+                                                <span>Боковой электрод:</span> 4 электрода, никелевый сплав
+                                            </div>
+                                            <div class="plug-parent__item">
+                                                Четыре боковых электрода не создают четыре искры одновременно.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="m-tab-content _tab2">
+                            <div class="plug-parent">
+                                <div class="plug-parent__bottom">
+                                    <div class="text20 text16-tablet bold-text">
+                                        <span class="_view1">
+                                            Подсерии Iridium:
+                                        </span>
+                                        <span class="_view2">
+                                            Другие варианты серии:
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="plug-parent__tabs">
+                                    <div class="plug-parent__tab" data-tab="_tab1">
+                                        <span>Single</span>
+                                    </div>
+                                    <div class="plug-parent__tab" data-tab="_tab2">
+                                        <span>Double</span>
+                                    </div>
+                                    <div class="plug-parent__tab" data-tab="_tab3">
+                                        <span>Ir / Pt</span>
+                                    </div>
+                                </div>
+                                <div class="plug-parent__home">
+                                    <img src="img/plug-logo5.svg" alt="" class="plug-parent__logo">
+                                    <div class="plug-parent__img">
+                                        <img src="img/plug-img6.webp" alt="">
+                                    </div>
+                                    <div class="plug-parent__grid">
+                                        <div class="plug-parent__col">
+                                            <div class="plug-parent__items">
+                                                <div class="plug-parent__item">
+                                                    <span>Рабочие электроды:</span> иридий
+                                                </div>
+                                                <div class="plug-parent__item">
+                                                    <span>Боковой электрод:</span> никель \ иридий \ платина
+                                                </div>
+                                                <div class="plug-parent__item _hide-mob">
+                                                    <span>Особенность:</span> повышенная стойкость рабочей зоны к износу, высокая  твердость и температура плавления
+                                                </div>
+                                                <div class="plug-parent__item">
+                                                    <span>ТЕХНОЛОГИЯ:</span> лазерная сварка бокового электрода и иридиевой / платиновой вставки
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="plug-parent__col2 _hide-mob">
+                                            <div class="text20 bold-text blue-text">
+                                                Иридий в рабочей зоне  центрального электрода
+                                            </div>
+                                            <div class="text">
+                                                <p>
+                                                    Иридий устойчив к высокой температуре и электрическому износу.
+                                                </p>
+
+                                                <p>
+                                                    Благодаря этому рабочая зона центрального электрода медленнее теряет форму и помогает дольше сохранять стабильное искрообразование.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="plug-card plug-card4 _tab1">
+                                    <div class="text24 blue-text bold-text _hide-mob">
+                                        IRIDIUM SERIES
+                                    </div>
+                                    <img src="img/plug-logo6.svg" alt="" class="plug-card__logo">
+                                    <div class="plug-card__img">
+                                        <img src="img/plug-img7.webp" alt="" class="_view1">
+                                        <img src="img/plug-img7-mob.webp" alt="" class="_view2">
+                                    </div>
+                                    <div class="plug-card__info _hide-mob">
+                                        <div class="text20 bold-text blue-text">
+                                            Защита центральной рабочей зоны
+                                        </div>
+                                        <div class="_mt24">
+                                            <div class="text20 gray-text4">
+                                                <p>Иридий устойчив к искровой эрозии и снижает износ центрального электрода.</p>
+
+                                                <p>Это помогает дольше сохранять его рабочую геометрию.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="plug-card__items _hide-mob">
+                                        <div class="plug-card__item plug-card__item1">
+                                            <div class="text20 _lh150 bold-text">
+                                                Боковой электрод
+                                            </div>
+                                            <div class="text20 gray-text4">
+                                                Никелевый сплав
+                                            </div>
+                                            <img src="img/line.svg" alt="">
+                                        </div>
+                                        <div class="plug-card__item plug-card__item2">
+                                            <div class="text20 _lh150 bold-text">
+                                                Центральный электрод
+                                            </div>
+                                            <div class="text20 gray-text4">
+                                                Иридий
+                                            </div>
+                                            <img src="img/line2.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="plug-parent__col">
+                                        <div class="plug-parent__items">
+                                            <div class="plug-parent__item">
+                                                <span>Рабочие электроды:</span> иридий
+                                            </div>
+                                            <div class="plug-parent__item">
+                                                <span>Боковой электрод:</span> никелевый сплав
+                                            </div>
+                                            <div class="plug-parent__item">
+                                                Иридий устойчив к искровой эрозии и снижает износ центрального электрода.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="plug-card plug-card5 _tab2">
+                                    <div class="text24 blue-text bold-text _hide-mob">
+                                        IRIDIUM SERIES
+                                    </div>
+                                    <img src="img/plug-logo7.svg" alt="" class="plug-card__logo">
+                                    <div class="plug-card__img">
+                                        <img src="img/plug-img8.webp" alt="" class="_view1">
+                                        <img src="img/plug-img8-mob.webp" alt="" class="_view2">
+                                    </div>
+                                    <div class="plug-card__info _hide-mob">
+                                        <div class="text20 bold-text blue-text">
+                                            Защита с обеих сторон зазора
+                                        </div>
+                                        <div class="_mt24">
+                                            <div class="text20 gray-text4">
+                                                <p>Иридий снижает эрозию центрального и бокового электродов.</p>
+
+                                                <p>Рабочая геометрия зазора дольше сохраняется с обеих сторон.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="plug-card__items _hide-mob">
+                                        <div class="plug-card__item plug-card__item1">
+                                            <div class="text20 _lh150 bold-text">
+                                                Боковой электрод
+                                            </div>
+                                            <div class="text20 gray-text4">
+                                                Иридий
+                                            </div>
+                                            <img src="img/line.svg" alt="">
+                                        </div>
+                                        <div class="plug-card__item plug-card__item2">
+                                            <div class="text20 _lh150 bold-text">
+                                                Центральный электрод
+                                            </div>
+                                            <div class="text20 gray-text4">
+                                                Иридий
+                                            </div>
+                                            <img src="img/line2.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="plug-parent__col">
+                                        <div class="plug-parent__items">
+                                            <div class="plug-parent__item">
+                                                <span>Рабочие электроды:</span> иридий
+                                            </div>
+                                            <div class="plug-parent__item">
+                                                <span>Боковой электрод:</span> иридий
+                                            </div>
+                                            <div class="plug-parent__item">
+                                                Иридий снижает эрозию центрального и бокового электродов.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="plug-card plug-card6 _tab3">
+                                    <div class="text24 blue-text bold-text _hide-mob">
+                                        IRIDIUM SERIES
+                                    </div>
+                                    <img src="img/plug-logo8.svg" alt="" class="plug-card__logo">
+                                    <div class="plug-card__img">
+                                        <img src="img/plug-img9.webp" alt="" class="_view1">
+                                        <img src="img/plug-img9-mob.webp" alt="" class="_view2">
+                                    </div>
+                                    <div class="plug-card__info _hide-mob">
+                                        <div class="text20 bold-text blue-text">
+                                            Иридий и платина в одной конструкции
+                                        </div>
+                                        <div class="_mt16">
+                                            <div class="text20 gray-text4">
+                                                <p>
+                                                    Иридий защищает центральную рабочую зону, платина – боковую. 
+                                                </p>
+                                                <p>
+                                                    Такая комбинация снижает износ
+                                                    с обеих сторон искрового зазора.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="plug-card__items _hide-mob">
+                                        <div class="plug-card__item plug-card__item1">
+                                            <div class="text20 _lh150 bold-text">
+                                                Боковой электрод
+                                            </div>
+                                            <div class="text20 gray-text4">
+                                                Платина
+                                            </div>
+                                            <img src="img/line6.svg" alt="">
+                                        </div>
+                                        <div class="plug-card__item plug-card__item2">
+                                            <div class="text20 _lh150 bold-text">
+                                                Центральный электрод
+                                            </div>
+                                            <div class="text20 gray-text4">
+                                                Иридий
+                                            </div>
+                                            <img src="img/line5.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="plug-parent__col">
+                                        <div class="plug-parent__items">
+                                            <div class="plug-parent__item">
+                                                <span>Рабочие электроды:</span> иридий
+                                            </div>
+                                            <div class="plug-parent__item">
+                                                <span>Боковой электрод:</span> платина
+                                            </div>
+                                            <div class="plug-parent__item">
+                                                Иридий защищает центральную рабочую зону, платина – боковую.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="m-tab-content _tab3">
+                            <div class="plug-parent">
+                                <div class="plug-parent__bottom">
+                                    <div class="text20 text16-tablet bold-text">
+                                        <span class="_view1">
+                                            Подсерии Nickel:
+                                        </span>
+                                        <span class="_view2">
+                                            Другие варианты серии:
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="plug-parent__tabs">
+                                    <div class="plug-parent__tab" data-tab="_tab1">
+                                        <span>1E</span>
+                                    </div>
+                                    <div class="plug-parent__tab" data-tab="_tab2">
+                                        <span>2E</span>
+                                    </div>
+                                    <div class="plug-parent__tab" data-tab="_tab3">
+                                        <span>3E</span>
+                                    </div>
+                                    <div class="plug-parent__tab" data-tab="_tab4">
+                                        <span>V-Cut</span>
+                                    </div>
+                                </div>
+                                <div class="plug-parent__home">
+                                    <img src="img/plug-logo9.svg" alt="" class="plug-parent__logo">
+                                    <div class="plug-parent__img">
+                                        <img src="img/plug-img14.webp" alt="">
+                                    </div>
+                                    <div class="plug-parent__grid">
+                                        <div class="plug-parent__col">
+                                            <div class="plug-parent__items">
+                                                <div class="plug-parent__item">
+                                                    <span>Рабочие электроды:</span> никелевый сплав
+                                                </div>
+                                                <div class="plug-parent__item">
+                                                    <span>Боковой электрод:</span> конструкция Ni-Cu
+                                                </div>
+                                                <div class="plug-parent__item _hide-mob">
+                                                    <span>Особенность:</span> несколько вариантов геометрии для точного соответствия двигателю
+                                                </div>
+                                                <div class="plug-parent__item">
+                                                    <span>ТЕХНОЛОГИЯ:</span> калильное число, зазор, резьба и тип посадки
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="plug-parent__col2 _hide-mob">
+                                            <div class="text20 bold-text blue-text">
+                                                Проверенная конструкция  для точного соответствия штатным параметрам двигателя
+                                            </div>
+                                            <div class="text">
+                                                <p>
+                                                    Никелевые свечи применяются там, где такая конструкция предусмотрена автопроизводителем.
+                                                </p>
+
+                                                <p>
+                                                    Здесь важно точное совпадение геометрии, зазора и калильного числа с параметрами двигателя.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="plug-card plug-card7 _tab1">
+                                    <div class="text24 blue-text bold-text _hide-mob">
+                                        NICKEL SERIES
+                                    </div>
+                                    <img src="img/plug-logo10.svg" alt="" class="plug-card__logo">
+                                    <div class="plug-card__img">
+                                        <img src="img/plug-img10.webp" alt="" class="_view1">
+                                        <img src="img/plug-img10-mob.webp" alt="" class="_view2">
+                                    </div>
+                                    <div class="plug-card__info _hide-mob">
+                                        <div class="text20 bold-text blue-text">
+                                            Одна фиксированная зона разряда
+                                        </div>
+                                        <div class="_mt24">
+                                            <div class="text20 gray-text4">
+                                                <p>Искра каждый раз формируется между центральным и одним боковым электродом.</p>
+
+                                                <p>Такая схема используется в двигателях с классической одноэлектродной конструкцией.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="plug-card__items _hide-mob">
+                                        <div class="plug-card__item plug-card__item1">
+                                            <div class="text20 _lh150 bold-text">
+                                                Боковой электрод
+                                            </div>
+                                            <div class="text20 gray-text4">
+                                                1 электрод
+                                            </div>
+                                            <img src="img/line.svg" alt="">
+                                        </div>
+                                        <div class="plug-card__item plug-card__item2">
+                                            <div class="text20 _lh150 bold-text">
+                                                Центральный электрод
+                                            </div>
+                                            <div class="text20 gray-text4">
+                                                Никелевый сплав
+                                            </div>
+                                            <img src="img/line2.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="plug-parent__col">
+                                        <div class="plug-parent__items">
+                                            <div class="plug-parent__item">
+                                                <span>Рабочие электроды:</span> никелевый сплав
+                                            </div>
+                                            <div class="plug-parent__item">
+                                                <span>Боковой электрод:</span> 1 электрод
+                                            </div>
+                                            <div class="plug-parent__item">
+                                                Искра каждый раз формируется между центральным и одним боковым электродом.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="plug-card plug-card8 _tab2">
+                                    <div class="text24 blue-text bold-text _hide-mob">
+                                        NICKEL SERIES
+                                    </div>
+                                    <img src="img/plug-logo11.svg" alt="" class="plug-card__logo">
+                                    <div class="plug-card__img">
+                                        <img src="img/plug-img11.webp" alt="" class="_view1">
+                                        <img src="img/plug-img11-mob.webp" alt="" class="_view2">
+                                    </div>
+                                    <div class="plug-card__info _hide-mob">
+                                        <div class="text20 bold-text blue-text">
+                                            Одна искра, два рабочих направления
+                                        </div>
+                                        <div class="_mt24">
+                                            <div class="text20 gray-text4">
+                                                <p>При каждом импульсе работает только один боковой электрод.</p>
+
+                                                <p>Две рабочие зоны поочерёдно принимают нагрузку и распределяют износ.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="plug-card__items _hide-mob">
+                                        <div class="plug-card__item plug-card__item1">
+                                            <div class="text20 _lh150 bold-text">
+                                                Центральный электрод
+                                            </div>
+                                            <div class="text20 gray-text4">
+                                                Никелевый сплав
+                                            </div>
+                                            <img src="img/line8.svg" alt="">
+                                        </div>
+                                        <div class="plug-card__item plug-card__item2">
+                                            <div class="text20 _lh150 bold-text">
+                                                Боковой электрод
+                                            </div>
+                                            <div class="text20 gray-text4">
+                                                2 электрода
+                                            </div>
+                                            <img src="img/line7.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="plug-parent__col">
+                                        <div class="plug-parent__items">
+                                            <div class="plug-parent__item">
+                                                <span>Рабочие электроды:</span> иридий
+                                            </div>
+                                            <div class="plug-parent__item">
+                                                <span>Боковой электрод:</span> иридий
+                                            </div>
+                                            <div class="plug-parent__item">
+                                                Иридий снижает эрозию центрального и бокового электродов.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="plug-card plug-card9 _tab3">
+                                    <div class="text24 blue-text bold-text _hide-mob">
+                                        NICKEL SERIES
+                                    </div>
+                                    <img src="img/plug-logo12.svg" alt="" class="plug-card__logo">
+                                    <div class="plug-card__img">
+                                        <img src="img/plug-img12.webp" alt="" class="_view1">
+                                        <img src="img/plug-img12-mob.webp" alt="" class="_view2">
+                                    </div>
+                                    <div class="plug-card__info _hide-mob">
+                                        <div class="text20 bold-text blue-text">
+                                            Одна искра, три рабочих направления
+                                        </div>
+                                        <div class="_mt16">
+                                            <div class="text20 gray-text4">
+                                                <p>Разряд не возникает на трёх электродах одновременно. </p>
+                                                <p>  При каждом импульсе работает один боковой электрод, а нагрузка распределяется между тремя рабочими зонами.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="plug-card__items _hide-mob">
+                                        <div class="plug-card__item plug-card__item1">
+                                            <div class="text20 _lh150 bold-text">
+                                                Боковой электрод
+                                            </div>
+                                            <div class="text20 gray-text4">
+                                                3 электрода
+                                            </div>
+                                            <img src="img/line9.svg" alt="">
+                                        </div>
+                                        <div class="plug-card__item plug-card__item2">
+                                            <div class="text20 _lh150 bold-text">
+                                                Центральный электрод
+                                            </div>
+                                            <div class="text20 gray-text4">
+                                                Никелевый сплав
+                                            </div>
+                                            <img src="img/line2.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="plug-parent__col">
+                                        <div class="plug-parent__items">
+                                            <div class="plug-parent__item">
+                                                <span>Рабочие электроды:</span> никелевый сплав
+                                            </div>
+                                            <div class="plug-parent__item">
+                                                <span>Боковой электрод:</span> 3 электрода
+                                            </div>
+                                            <div class="plug-parent__item">
+                                                Разряд не возникает на трёх электродах одновременно.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="plug-card plug-card10 _tab4">
+                                    <div class="text24 blue-text bold-text _hide-mob">
+                                        NICKEL SERIES
+                                    </div>
+                                    <img src="img/plug-logo13.svg" alt="" class="plug-card__logo">
+                                    <div class="plug-card__img">
+                                        <img src="img/plug-img13.webp" alt="" class="_view1">
+                                        <img src="img/plug-img13-mob.webp" alt="" class="_view2">
+                                    </div>
+                                    <div class="plug-card__info _hide-mob">
+                                        <div class="text20 bold-text blue-text">
+                                            Искра смещена к краю электрода
+                                        </div>
+                                        <div class="_mt16">
+                                            <div class="text20 gray-text4">
+                                                <p>V-образный вырез направляет разряд к внешней кромке центрального электрода.   </p>
+                                                <p>Здесь искра меньше перекрывается металлом и остаётся более открытой для топливовоздушной смеси.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="plug-card__items _hide-mob">
+                                        <div class="plug-card__item plug-card__item1">
+                                            <div class="text20 _lh150 bold-text">
+                                                Боковой электрод
+                                            </div>
+                                            <div class="text20 gray-text4">
+                                                3 электрода
+                                            </div>
+                                            <img src="img/line.svg" alt="">
+                                        </div>
+                                        <div class="plug-card__item plug-card__item2">
+                                            <div class="text20 _lh150 bold-text">
+                                                Центральный электрод
+                                            </div>
+                                            <div class="text20 gray-text4">
+                                                Никелевый сплав
+                                            </div>
+                                            <img src="img/line.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="plug-parent__col">
+                                        <div class="plug-parent__items">
+                                            <div class="plug-parent__item">
+                                                <span>Рабочие электроды:</span> никелевый сплав
+                                            </div>
+                                            <div class="plug-parent__item">
+                                                <span>Боковой электрод:</span> 3 электрода
+                                            </div>
+                                            <div class="plug-parent__item">
+                                                V-образный вырез направляет разряд к внешней кромке центрального электрода.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech">
+                <div class="container">
+                    <div class="tech__inner">
+                        <div class="tech__content">
+                            <div class="tech__top _grad-border">
+                                <div class="tech__title">
+                                    Не просто работает.  <br>
+                                    <span>Работает, как должна!</span>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>
+                                    Конструкция, материалы и геометрия свечи должны соответствовать требованиям конкретного двигателя.
+                                    В ALPIC это проверяется на уровне продукта и артикула.
+                                </p>
+                            </div>
+                        </div>
+                        <img src="img/tech3.webp" alt="" class="tech__img">
+                    </div>
+
+                    <div class="tech-slider slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="tech-card">
+                                        <div class="tech-card__top _grad-border">
+                                            <div class="tech-card__icon">
+                                                <img src="img/tech-icon5.webp" alt="">
+                                            </div>
+                                            <img src="img/tech-num.svg" alt="" class="tech-card__num">
+                                        </div>
+
+                                        <div class="tech-card__title">
+                                            ПЛАТИНА <br>  + ИРИДИЙ
+                                        </div>
+                                        <div class="tech-card__desc">
+                                            Меньше износ – дольше сохраняется рабочая геометрия электродов.
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tech-card">
+                                        <div class="tech-card__top _grad-border">
+                                            <div class="tech-card__icon">
+                                                <img src="img/tech-icon6.webp" alt="">
+                                            </div>
+                                            <img src="img/tech-num2.svg" alt="" class="tech-card__num">
+                                        </div>
+
+                                        <div class="tech-card__title">
+                                            ЛАЗЕРНАЯ СВАРКА
+                                        </div>
+                                        <div class="tech-card__desc">
+                                            Надёжное соединение бокового электрода и вставки из драг.металла.
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tech-card">
+                                        <div class="tech-card__top _grad-border">
+                                            <div class="tech-card__icon">
+                                                <img src="img/tech-icon7.webp" alt="">
+                                            </div>
+                                            <img src="img/tech-num3.svg" alt="" class="tech-card__num">
+                                        </div>
+
+                                        <div class="tech-card__title">
+                                            ISO/DIS 11565
+                                        </div>
+                                        <div class="tech-card__desc">
+                                            Производство  и тестирование продукции по международному стандарту.
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tech-card">
+                                        <div class="tech-card__top _grad-border">
+                                            <div class="tech-card__icon">
+                                                <img src="img/tech-icon8.webp" alt="">
+                                            </div>
+                                            <img src="img/tech-num4.svg" alt="" class="tech-card__num">
+                                        </div>
+
+                                        <div class="tech-card__title">
+                                            ДО 70 000 КМ*
+                                        </div>
+                                        <div class="tech-card__desc">
+                                            Расширенная гарантия на свечи зажигания ALPIC.
+                                        </div>
+                                        <div class="tech-card__nav">
+                                            <button data-bs-toggle="modal" data-bs-target="#infoModal" class="tech-card__btn m-btn m-btn-blue">
+                                                <span>О гарантии*</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-help pendants-help">
+                <div class="container">
+                    <div class="filter-help__inner">
+                        <img src="img/logo.svg" alt="" class="filter-help__logo">
+                        <div class="filter-help__title">
+                            <div class="text36 text20-big-tablet bold-text">
+                                Подберите свечу зажигания за несколько шагов
+                            </div>
+                        </div>
+                        <div class="text24 text16-big-tablet medium-text">
+                            Воспользуйтесь умной системой подбора на сайте –  это быстро и точно. Укажите оригинальный номер артикула или кросс-номер, и мы подберем подходящую свечу ALPIC за секунды.
+                        </div>
+                        <div class="filter-help__bottom _flex">
+                            <button class="_go-to-filter filter-help__btn m-btn m-btn-big m-btn-blue">
+                                <span>Подобрать свечу →</span>
+                            </button>
+                            <div class="filter-home-catalog__desc">
+                                <div class="text16 medium-text">
+                                    Перейти к системе подбора ALPIC
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-help__img">
+                            <img src="img/filter-help5.webp" alt="" class="_view1">
+                            <img src="img/filter-help5-mob.webp" alt="" class="_view2">
+                        </div>
+                        <div class="filter-help__partners">
+                            <img src="img/partner-icon.svg" alt="">
+                            <img src="img/partner-icon2.svg" alt="">
+                            <img src="img/partner-icon3.svg" alt="">
+                            <img src="img/partner-icon4.svg" alt="">
+                            <img src="img/partner-icon5.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <a href="" class="footer__logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <div class="footer__inner">
+                    <div class="footer__links">
+                        <ul>
+                            <li><a href="">О бренде</a></li>
+                            <li><a href="">Где купить?</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__bottom">
+                        <a href="" class="footer__conf text16 medium-text">
+                            Политика <br>
+                конфиденциальности
+                        </a>
+                        <div class="footer__c medium-text _flex">
+                            <img src="img/c.svg" alt="">
+                            <span class="text16">
+                    2024
+                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade thank-modal plug-modal" id="infoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <div class="plug-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Серия свечей</th>
+                                <th>Гарантия 1 год, либо по пробегу</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Platinum Plate, 4E
+                                </td>
+                                <td>70000 км</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Iridium+Platinum
+                                </td>
+                                <td>70000 км</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Double Platinum
+                                </td>
+                                <td>70000 км</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Double Iridium
+                                </td>
+                                <td>70000 км</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Single Platinum
+                                </td>
+                                <td>50000 км</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Single Iridium
+                                </td>
+                                <td>50000 км</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ni-Cu, V-Cut
+                                </td>
+                                <td>30000 км</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ni-Cu, 2E
+                                </td>
+                                <td>30000 км</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ni-Cu
+                                </td>
+                                <td>30000 км</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--    <div class="modal-backdrop fade show"></div>-->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
